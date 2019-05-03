@@ -22,7 +22,7 @@ def mapa():
 @app.route('/tables')
 def tables():
     csv = pd.read_csv('files/table.csv', sep=';')
-    html_table = csv.to_html()
+    html_table = csv.to_html(index=False)
     html_table = html_table.replace(' border="1" ', ' ')
     html_table = html_table.replace('dataframe', 'table')
 
