@@ -86,6 +86,9 @@
                             <a href="{{ url_for('index')}}" class="waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>Inicio</a>
                         </li>
                         <li>
+                            <a href="{{ url_for('centros')}}" class="waves-effect"><i class="fa fa-institution m-r-10" aria-hidden="true"></i>Centros</a>
+                        </li>
+                        <li>
                             <a href="{{ url_for('avance')}}" class="waves-effect"><i class="fa fa-tasks m-r-10" aria-hidden="true"></i>Avance</a>
                         </li>
                         <li>
@@ -96,9 +99,6 @@
                         </li>
                         <li>
                             <a href="{{ url_for('mapa')}}" class="waves-effect"><i class="fa fa-globe m-r-10" aria-hidden="true"></i>Mapa</a>
-                        </li>
-                        <li>
-                            <a href="{{ url_for('centros')}}" class="waves-effect"><i class="fa fa-institution m-r-10" aria-hidden="true"></i>Centros</a>
                         </li>
                     </ul>
                 </nav>
@@ -122,7 +122,7 @@
                     <div class="col-md-6 col-8 align-self-center">
                         <h3 class="text-themecolor m-b-0 m-t-0">{{ title_s }}</h3>
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{ url_for('index')}}">Home</a></li>
                             <li class="breadcrumb-item active">{{ title_s }}</li>
                         </ol>
                     </div>

@@ -25,7 +25,8 @@ def formularios():
 
 @app.route('/centros')
 def centros():
-    return render_template('centros.html')
+    csv = pd.read_csv('files/centros.csv', sep=';')
+    return render_template('centros.html', csv = csv)
 
 
 @app.route('/tables')
