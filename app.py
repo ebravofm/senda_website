@@ -19,6 +19,15 @@ def mapa():
     return render_template('mapa.html')
 
 
+@app.route('/formularios')
+def formularios():
+    return render_template('formularios.html')
+
+@app.route('/centros')
+def centros():
+    return render_template('centros.html')
+
+
 @app.route('/tables')
 def tables():
     csv = pd.read_csv('files/table.csv', sep=';')

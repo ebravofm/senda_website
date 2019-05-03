@@ -49,7 +49,20 @@
                 <!-- ============================================================== -->
                 <div class="navbar-header">
                     <a class="navbar-brand" href="{{ url_for('index') }}">
-                        <h3 class="text-themecolor m-b-0 m-t-0">Estudio SENDA</h3>
+
+                        <!-- Logo icon -->
+                        <b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="../assets/images/logo-icon.png" alt="Panel" class="dark-logo">
+                            
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span>
+                            <!-- dark Logo text -->
+                            <img src="../assets/images/logo-text.png" alt="de Control" class="dark-logo">
+                        </span>
                     </a>
                 </div>
                 <!-- ============================================================== -->
@@ -63,9 +76,9 @@
         <!-- ============================================================== -->
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
-        <aside class="left-sidebar">
+        <aside class="left-sidebar" style="position: fixed;" >
             <!-- Sidebar scroll-->
-            <div class="scroll-sidebar">
+            <div class="scroll-sidebar" >
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
@@ -76,10 +89,16 @@
                             <a href="{{ url_for('avance')}}" class="waves-effect"><i class="fa fa-tasks m-r-10" aria-hidden="true"></i>Avance</a>
                         </li>
                         <li>
+                            <a href="{{ url_for('formularios')}}" class="waves-effect"><i class="fa fa-check-square m-r-10" aria-hidden="true"></i>Formularios</a>
+                        </li>
+                        <li>
                             <a href="{{ url_for('tables')}}" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>Tablas</a>
                         </li>
                         <li>
                             <a href="{{ url_for('mapa')}}" class="waves-effect"><i class="fa fa-globe m-r-10" aria-hidden="true"></i>Mapa</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('centros')}}" class="waves-effect"><i class="fa fa-institution m-r-10" aria-hidden="true"></i>Centros</a>
                         </li>
                     </ul>
                 </nav>
@@ -152,6 +171,8 @@
     <!-- Style switcher -->
     <!-- ============================================================== -->
     <script src="/static/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    {% block jquery_script %} {% endblock %}
+
 </body>
 
 </html>

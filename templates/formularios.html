@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block title %}Formularios{% endblock %}
+{% block jquery_script %} 
+<script>
+        $("#formulario")
+            .html('<object data="http://fenuchile.qualtrics.com/jfe/form/SV_1zctPG1AXCpQF0N"/>');
+</script>
+{% endblock %}
+
+{% block body %}
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-block">
+                <h4 class="card-title">Centros VAIS</h4>
+                                <div id="gmaps-simple" class="gmaps" height="100%">
+
+ <div> 
+    <object type="text/html" data="http://fenuchile.qualtrics.com/jfe/form/SV_1zctPG1AXCpQF0N" width="100%" height="500px" style="overflow:auto;border:1px ridge black">
+    </object>
+ </div> </div>           </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
