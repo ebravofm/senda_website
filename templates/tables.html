@@ -1,0 +1,22 @@
+{% extends 'header.html' %}
+
+{% block title %}Tablas{% endblock %}
+
+{% block body %}
+<div class="row">
+    <!-- column -->
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-block">
+                <h4 class="card-title">Corporacion Cristo Obrero (Valparaíso)</h4>
+                <h6 class="card-subtitle">Recursos Humanos</h6>
+                <div class="table-responsive">
+                    {{ html_table|safe }}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
