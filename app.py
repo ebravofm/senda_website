@@ -2,6 +2,7 @@ from flask import Flask, render_template
 import pandas as pd
 
 
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -16,10 +17,6 @@ def avance():
 @app.route('/input')
 def input():
     return render_template('input.html')
-
-@app.route('/index_input')
-def index_input():
-    return render_template('index_input.html')
 
 @app.route('/mapa')
 def mapa():

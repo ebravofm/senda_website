@@ -2,6 +2,8 @@
 
 {% block title %}Formularios{% endblock %}
 {% block jquery_script %} 
+
+
 <script>
 $(document).ready(function(){
   $(".togGastos").click(function(){
@@ -21,6 +23,11 @@ $(document).ready(function(){
   });
   $(".togOtros").click(function(){
     $("#qualtrics").attr("data", "http://fenuchile.qualtrics.com/jfe/form/SV_bD7yYtCG8VZESDb");
+    $("#forms").fadeIn();
+    $("#inputHome").hide();
+  });
+  $(".togSheets").click(function(){
+    $("#qualtrics").attr("data", "https://docs.google.com/spreadsheets/d/1fL1HO7ijI7Nj2h6kYgGU1M3RDcMTyiprME2XkmtY98Q/edit?rm=minimal#gid=0");
     $("#forms").fadeIn();
     $("#inputHome").hide();
   });
