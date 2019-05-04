@@ -24,9 +24,9 @@
                             <br>
                             <span class="fa fa-phone fa-fw text-muted"></span>
                             <span class="text-muted small">{{ centro['Teléfono'] }}</span>
-                            <br><br>
                             <div class="row">
                                 <div class="col-lg-6 col-sm-12 col-xs-12 col-md-12">
+                                    <br><br>
                                     <span class="fa fa-user fa-fw text-muted"></span>
                                     <span class="text-muted small">{{ centro['Representante Legal'] }} (Representante Legal)</span>
                                     {% for mail in centro['Mail Representante'].split(', ')%}
@@ -38,6 +38,7 @@
                                     {% endfor %}  
                                 </div>
                                 <div class="col-lg-6 col-sm-12 col-xs-12 col-md-12">
+                                    <br><br>
                                     <span class="fa fa-user fa-fw text-muted"></span>
                                     <span class="text-muted small">{{ centro['Coordinador'] }} (Coordinador/a)</span>
                                     {% for mail in centro['Mail Coordinador'].split(', ')%}
