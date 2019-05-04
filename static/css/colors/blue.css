@@ -193,3 +193,10 @@ a.link:hover, a.link:focus {
   background: #ffffff;
   color: #009efb;
 }
+
+/*Custom*/
+
+.collapse-title {
+    color: #009efb;
+    margin-bottom: 0px;
+}

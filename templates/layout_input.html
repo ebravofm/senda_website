@@ -17,7 +17,7 @@
     <!-- Custom CSS -->
     <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
     <!-- You can change the theme colors from here -->
-    <link href="{{ url_for('static', filename='css/colors/red.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/colors/blue.css')}}" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -54,14 +54,14 @@
                         <b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
-                            <img src="../assets/images/logo-icon.png" alt="Panel" class="dark-logo">
+                            <img src="../assets/images/logo-icon.png" alt="Formulario" class="dark-logo">
                             
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
                         <span>
                             <!-- dark Logo text -->
-                            <img src="../assets/images/logo-text.png" alt="de Control" class="dark-logo">
+                            <img src="../assets/images/logo-text.png" alt="." class="dark-logo">
                         </span>
                     </a>
                 </div>
@@ -75,10 +75,10 @@
                             Menu
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a href="{{ url_for('avance')}}" class="dropdown-item" class="waves-effect"><i class="fa fa-tasks m-r-10" aria-hidden="true"></i>Avance</a>
-                            <a href="{{ url_for('formularios')}}" class="dropdown-item" class="waves-effect"><i class="fa fa-check-square m-r-10" aria-hidden="true"></i>Formularios</a>
-                            <a href="{{ url_for('tables')}}" class="dropdown-item" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>Tablas</a>
-                            <a href="{{ url_for('mapa')}}" class="dropdown-item" class="waves-effect"><i class="fa fa-globe m-r-10" aria-hidden="true"></i>Mapa</a>
+                            <a id="togGastos" href="#" class="togGastos dropdown-item" class="waves-effect"><i class="fa fa-usd m-r-10" aria-hidden="true"></i>Gastos Básicos</a>
+                            <a id="togCasa" href="#" class="togCasa dropdown-item" class="waves-effect"><i class="fa fa-home m-r-10" aria-hidden="true"></i>Casa Y Mobiliario</a>
+                            <a id="togRRHH" href="#" class="togRRHH dropdown-item" class="waves-effect"><i class="fa fa-smile-o m-r-10" aria-hidden="true"></i>Recursos Humanos</a>
+                            <a id="togOtros" href="#" class="togOtros dropdown-item" class="waves-effect"><i class="fa fa-car m-r-10" aria-hidden="true"></i>Otros</a>
                             <!-- <div class="dropdown-divider"></div> -->
                             <!-- <a href="#"class="dropdown-item">Logout</a> -->
                         </div>
@@ -100,19 +100,19 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li>
-                            <a href="{{ url_for('index')}}" class="waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>Inicio</a>
+                            <a id="togHome" href="#" class="togHome waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>Inicio</a>
                         </li>
                         <li>
-                            <a href="{{ url_for('avance')}}" class="waves-effect"><i class="fa fa-tasks m-r-10" aria-hidden="true"></i>Avance</a>
+                            <a id="togGastos" href="#" class="togGastos waves-effect"><i class="fa fa-usd m-r-10" aria-hidden="true"></i>Gastos Básicos</a>
                         </li>
                         <li>
-                            <a href="{{ url_for('formularios')}}" class="waves-effect"><i class="fa fa-check-square m-r-10" aria-hidden="true"></i>Formularios</a>
+                            <a id="togCasa" href="#" class="togCasa waves-effect"><i class="fa fa-home m-r-10" aria-hidden="true"></i>Casa y Mobiliario</a>
                         </li>
                         <li>
-                            <a href="{{ url_for('tables')}}" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>Tablas</a>
+                            <a id="togRRHH" href="#" class="togRRHH waves-effect"><i class="fa fa-smile-o m-r-10" aria-hidden="true"></i>Recursos Humanos</a>
                         </li>
                         <li>
-                            <a href="{{ url_for('mapa')}}" class="waves-effect"><i class="fa fa-globe m-r-10" aria-hidden="true"></i>Mapa</a>
+                            <a id="togOtros" href="#" class="togOtros waves-effect"><i class="fa fa-car m-r-10" aria-hidden="true"></i>Otros</a>
                         </li>
                     </ul>
                 </nav>
@@ -130,6 +130,7 @@
             <!-- ============================================================== -->
             <!-- Container fluid  -->
             <!-- ============================================================== -->
+            {% block body %} 
             <div class="container-fluid">
 
                 <div class="row page-titles">
@@ -142,8 +143,8 @@
                     </div>
                 </div>
 
-                {% block body %} {% endblock %}
             </div>
+            {% endblock %}
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
             <!-- ============================================================== -->

@@ -38,11 +38,11 @@ File: scss
 .topbar {
   background: #f62d51;
   /* Old browsers */
-  background: -moz-linear-gradient(left, #f62d51 0%, #660fb5 100%);
+  background: -moz-linear-gradient(left, #f62d51 0%, #d73030 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #f62d51 0%, #660fb5 100%);
+  background: -webkit-linear-gradient(left, #f62d51 0%, #d73030 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #f62d51 0%, #660fb5 100%);
+  background: linear-gradient(to right, #f62d51 0%, #d73030 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
@@ -196,4 +196,16 @@ a.link:hover, a.link:focus {
   font-weight: 400;
   background: #ffffff;
   color: #f62d51;
+}
+
+
+/*Custom*/
+
+.collapse-title {
+    color: #f62d51;
+    margin-bottom: 0px;
+}
+
+.card-header {
+    background-color: #eaeaea !important;
 }

@@ -5,14 +5,18 @@ import pandas as pd
 app = Flask(__name__)
 
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
 
 @app.route('/avance')
 def avance():
     return render_template('avance.html')
+
+@app.route('/input')
+def input():
+    return render_template('input.html')
+
+@app.route('/index_input')
+def index_input():
+    return render_template('index_input.html')
 
 @app.route('/mapa')
 def mapa():
@@ -23,10 +27,10 @@ def mapa():
 def formularios():
     return render_template('formularios.html')
 
-@app.route('/centros')
-def centros():
+@app.route('/')
+def index():
     csv = pd.read_csv('files/centros.csv', sep=';')
-    return render_template('centros.html', csv = csv)
+    return render_template('index.html', csv = csv)
 
 
 @app.route('/tables')

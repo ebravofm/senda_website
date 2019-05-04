@@ -1,4 +1,5 @@
 {% extends 'layout.html' %}
+{% from "macros.html" import centros_region %}
 
 {% block title %}Inicio{% endblock %}
 
@@ -8,10 +9,19 @@
     <div class="col-12">
         <div class="card">
             <div class="card-block">
-                Esta es la página de inicio, que tendrá un breve mensaje de descripción y links a las demás funcionalidades.
+                Información de Contacto de cada uno de los centros.
             </div>
         </div>
     </div>
 </div>
 
+
+<div class="row">
+    <div class="col-12">
+        {{ centros_region('Región Metropolitana', csv[csv['Región']=='Metropolitana'], show='show') }}
+        {{ centros_region('Región de Valparaíso', csv[csv['Región']=='Valparaíso']) }}
+        {{ centros_region('Región del Bio Bio', csv[csv['Región']=='Bio Bio']) }}
+        {{ centros_region('Región de los Ríos', csv[csv['Región']=='Los Ríos']) }}    
+    </div>
+</div>
 {% endblock %}

@@ -1,0 +1,73 @@
+{% extends 'layout_input.html' %}
+
+{% block title %}Formularios{% endblock %}
+{% block jquery_script %} 
+<script>
+$(document).ready(function(){
+  $(".togGastos").click(function(){
+    $("#qualtrics").attr("data", "http://fenuchile.qualtrics.com/jfe/form/SV_07fzN7BwAyFcYER");
+    $("#forms").fadeIn();
+    $("#inputHome").hide();
+  });
+  $(".togCasa").click(function(){
+    $("#qualtrics").attr("data", "http://fenuchile.qualtrics.com/jfe/form/SV_cVfnsns9Uly40Vn");
+    $("#forms").fadeIn();
+    $("#inputHome").hide();
+  });
+  $(".togRRHH").click(function(){
+    $("#qualtrics").attr("data", "http://fenuchile.qualtrics.com/jfe/form/SV_eG6NjhIK28q9gDX");
+    $("#forms").fadeIn();
+    $("#inputHome").hide();
+  });
+  $(".togOtros").click(function(){
+    $("#qualtrics").attr("data", "http://fenuchile.qualtrics.com/jfe/form/SV_bD7yYtCG8VZESDb");
+    $("#forms").fadeIn();
+    $("#inputHome").hide();
+  });
+});
+
+$(document).ready(function(){
+  $(".togHome").click(function(){
+    $("#inputHome").fadeIn(500);
+    $("#forms").hide();
+  });
+});
+
+</script>
+{% endblock %}
+
+{% block body %}
+
+            <div id="inputHome" class="container-fluid">
+
+                <div class="row page-titles">
+                    <div class="col-md-6 col-8 align-self-center">
+                        <h3 class="text-themecolor m-b-0 m-t-0">{{ title_s }}</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{{ url_for('index')}}">Home</a></li>
+                            <li class="breadcrumb-item active">{{ title_s }}</li>
+                        </ol>
+                    </div>
+                </div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-block">
+                Esta es la página de inicio, que tendrá un breve mensaje de descripción y links a las demás funcionalidades.
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+
+
+
+
+<div id="forms" class="container-fluid" style="padding:0px; display:none;">
+    <div class="row" style="height: 800px; min-height: 100%;">
+        <object id="qualtrics" type="text/html" data="http://fenuchile.qualtrics.com/jfe/form/SV_07fzN7BwAyFcYER" width="100%" height="100%" style="overflow:hidden;border:1px ridge black">
+    </div>
+</div>
+
+{% endblock %}
