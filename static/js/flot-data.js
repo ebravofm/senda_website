@@ -1,9 +1,3 @@
-/*
-Template Name: Monster Admin
-Author: Themedesigner
-Email: niravjoshi87@gmail.com
-File: js
-*/
 // Real Time chart
 var data = [],
     totalPoints = 300;

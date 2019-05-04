@@ -29,8 +29,7 @@ def mapa():
 @app.route('/formularios')
 def formularios():
     return render_template('formularios.html')
-
-
+    
 
 @app.route('/tables')
 def tables():
