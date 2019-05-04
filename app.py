@@ -3,7 +3,6 @@ import pandas as pd
 
 app = Flask(__name__)
 
-
 @app.route('/')
 def index():
     csv = pd.read_csv('files/centros.csv', sep=';')
@@ -29,7 +28,7 @@ def mapa():
 @app.route('/formularios')
 def formularios():
     return render_template('formularios.html')
-    
+
 
 @app.route('/tables')
 def tables():
