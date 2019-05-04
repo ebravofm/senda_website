@@ -68,7 +68,25 @@
                 <!-- ============================================================== -->
                 <!-- End Logo -->
                 <!-- ============================================================== -->
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <span class="fa fa-bars fa-fw text-light"></span>
+                            Menu
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a href="{{ url_for('centros')}}" class="dropdown-item">Centros</a>
+                            <a href="{{ url_for('avance')}}" class="dropdown-item">Avance</a>
+                            <a href="{{ url_for('formularios')}}" class="dropdown-item">Formularios</a>
+                            <a href="{{ url_for('tables')}}" class="dropdown-item">Tablas</a>
+                            <a href="{{ url_for('mapa')}}" class="dropdown-item">Mapa</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <!-- <a href="#"class="dropdown-item">Logout</a> -->
+                        </div>
+                    </li>
+                </ul>
             </nav>
+
         </header>
         <!-- ============================================================== -->
         <!-- End Topbar header -->

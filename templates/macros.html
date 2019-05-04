@@ -1,0 +1,62 @@
+{% macro centros_region(region, csv, show='') %}
+
+<div class="card card-collapse">
+
+    <div class="card-header" id="heading{{region.replace(' ', '')}}">
+        <button class="btn btn-link collapsed" data-toggle="collapse"  aria-expanded="true" data-target="#collapse{{region.replace(' ', '')}}" aria-expanded="false" aria-controls="collapse{{region.replace(' ', '')}}">
+            <h5 class="collapse-title">{{region}}</h5>
+        </button>
+    </div>
+
+    <div id="collapse{{region.replace(' ', '')}}" class="collapse {{show}}" aria-labelledby="heading{{region.replace(' ', '')}}">
+        <div class="card-block">
+            <ul class="list-group pull-down" id="contact-list">
+            {% for n, centro in csv.iterrows() %}
+                <li class="list-group-item">
+                    <div class="row w-100">
+                        <div class="col-12 text-center text-sm-left">
+                            <label class="name lead">{{ centro['Nombre'] }}</label>
+                            <br> 
+                            <a href="https://www.google.com/maps/place/{{ centro['Dirección'] }}">                        
+                                <span class="fa fa-map-marker fa-fw text-muted"></span>
+                                <span class="text-muted">{{ centro['Dirección'] }} (Ver en Mapa)</span>
+                            </a>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted"></span>
+                            <span class="text-muted small">{{ centro['Teléfono'] }}</span>
+                            <br><br>
+                            <div class="row">
+                                <div class="col-6">
+                                    <span class="fa fa-user fa-fw text-muted"></span>
+                                    <span class="text-muted small">{{ centro['Representante Legal'] }} (Representante Legal)</span>
+                                    {% for mail in centro['Mail Representante'].split(', ')%}
+                                    <br>
+                                    <a href="mailto:{{ mail }}">
+                                        <span class="fa fa-envelope fa-fw text-muted"></span>
+                                        <span class="text-muted small text-truncate">{{ mail }}</span>
+                                    </a>
+                                    {% endfor %}  
+                                </div>
+                                <div class="col-6">
+                                    <span class="fa fa-user fa-fw text-muted"></span>
+                                    <span class="text-muted small">{{ centro['Coordinador'] }} (Coordinador/a)</span>
+                                    {% for mail in centro['Mail Coordinador'].split(', ')%}
+                                    <br>
+                                    <a href="mailto:{{ mail }}">
+                                        <span class="fa fa-envelope fa-fw text-muted"></span>
+                                        <span class="text-muted small text-truncate">{{ mail }}</span>
+                                    </a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>                
+    </div>
+
+</div>
+
+{% endmacro %}
