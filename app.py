@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 import pandas as pd
-
+import gpandas as gpd
 
 app = Flask(__name__)
 
@@ -13,19 +13,22 @@ def index():
 def avance():
     return render_template('avance.html')
 
-@app.route('/input')
-def input():
-    return render_template('input.html')
+@app.route('/input/<cod>')
+def input(cod):
+
+    layout = gpd.read_gexcel('1svbIKSKB5v0LjKUgEt0_cqQRU83d_7fzRyoywMKKAHI', sheet_name=cod.upper())
+    layout.dropna(inplace=True)
+    layout['tog'] = 'tog'+layout['Nombre Módulo'].str.replace(' ', '')
+
+    return render_template('input.html', layout=layout)
 
 @app.route('/mapa')
 def mapa():
     return render_template('mapa.html')
 
-
 @app.route('/formularios')
 def formularios():
     return render_template('formularios.html')
-
 
 @app.route('/tables')
 def tables():
@@ -33,7 +36,6 @@ def tables():
     html_table = csv.to_html(index=False)
     html_table = html_table.replace(' border="1" ', ' ')
     html_table = html_table.replace('dataframe', 'table')
-
 
     return render_template('tables.html', html_table=html_table)
 

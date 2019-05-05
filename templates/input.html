@@ -1,38 +1,9 @@
 {% extends 'layout_input.html' %}
 
 {% block title %}Formularios{% endblock %}
+
 {% block jquery_script %} 
-
-
 <script>
-$(document).ready(function(){
-  $(".togGastos").click(function(){
-    $("#qualtrics").attr("data", "http://fenuchile.qualtrics.com/jfe/form/SV_07fzN7BwAyFcYER");
-    $("#forms").fadeIn();
-    $("#inputHome").hide();
-  });
-  $(".togCasa").click(function(){
-    $("#qualtrics").attr("data", "http://fenuchile.qualtrics.com/jfe/form/SV_cVfnsns9Uly40Vn");
-    $("#forms").fadeIn();
-    $("#inputHome").hide();
-  });
-  $(".togRRHH").click(function(){
-    $("#qualtrics").attr("data", "http://fenuchile.qualtrics.com/jfe/form/SV_eG6NjhIK28q9gDX");
-    $("#forms").fadeIn();
-    $("#inputHome").hide();
-  });
-  $(".togOtros").click(function(){
-    $("#qualtrics").attr("data", "http://fenuchile.qualtrics.com/jfe/form/SV_bD7yYtCG8VZESDb");
-    $("#forms").fadeIn();
-    $("#inputHome").hide();
-  });
-  $(".togSheets").click(function(){
-    $("#qualtrics").attr("data", "https://docs.google.com/spreadsheets/d/1fL1HO7ijI7Nj2h6kYgGU1M3RDcMTyiprME2XkmtY98Q/edit?rm=minimal#gid=0");
-    $("#forms").fadeIn();
-    $("#inputHome").hide();
-  });
-});
-
 $(document).ready(function(){
   $(".togHome").click(function(){
     $("#inputHome").fadeIn(500);
@@ -40,7 +11,35 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+{% for n, row in layout.iterrows() %}
+  $(".{{row['tog']}}").click(function(){
+    $("#qualtrics").attr("data", "{{row['Link']}}");
+    $("#forms").fadeIn();
+    $("#inputHome").hide();
+  });
+{% endfor %}
+});
 </script>
+{% endblock %}
+
+
+{% block dropdown%} 
+    <a href="#" class="togHome dropdown-item" class="waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>Inicio</a>
+    
+    {% for n, row in layout.iterrows() %}
+    <a href="#" class="tog{{row['Nombre Módulo'].replace(' ', '')}} dropdown-item" class="waves-effect"><i class="fa {{row['Icon']}} m-r-10" aria-hidden="true"></i>{{row['Nombre Módulo']}}</a>
+    {% endfor %}
+{% endblock %}
+
+
+{% block sidebar%} 
+    <li><a href="#" class="togHome waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>Inicio</a></li>
+
+    {% for n, row in layout.iterrows() %}
+    <li><a href="#" class="tog{{row['Nombre Módulo'].replace(' ', '')}} waves-effect"><i class="fa {{row['Icon']}} m-r-10" aria-hidden="true"></i>{{row['Nombre Módulo']}}</a></li>
+
+    {% endfor %}
 {% endblock %}
 
 {% block body %}
@@ -73,7 +72,7 @@ $(document).ready(function(){
 <div id="forms" class="container-fluid bg-white" style="display:none;">
     <div class="row" style="height: 1500px; min-height: 100%;">
         <div class="offset-md-2 col-md-8">
-            <object id="qualtrics" type="text/html" data="http://fenuchile.qualtrics.com/jfe/form/SV_07fzN7BwAyFcYER" width="100%" height="100%" style="overflow:hidden;">
+            <object id="qualtrics" type="text/html" data="" width="100%" height="100%" style="overflow:hidden;">
         </div>
     </div>
 </div>
