@@ -5,7 +5,7 @@ import gpandas as gpd
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/ias-uchile')
 def index():
     csv = pd.read_csv('files/centros.csv', sep=';')
     return render_template('index.html', csv = csv)
