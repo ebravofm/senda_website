@@ -12,7 +12,15 @@ def index():
 
 @app.route('/avance')
 def avance():
-    return render_template('avance.html')
+    info = gpd.read_gexcel('1JV6tOulapdvDkT9RIEsf-rwUUefg9xHGYMuW4nFI_vM')
+    formularios = gpd.gExcelFile('1svbIKSKB5v0LjKUgEt0_cqQRU83d_7fzRyoywMKKAHI')
+
+    forms = {}
+    for centro in formularios.sheet_names:
+        forms[centro] = formularios.parse(centro)
+        forms[centro].dropna(inplace=True)
+
+    return render_template('avance.html', info=info, forms=forms)
 
 @app.route('/input/<cod>')
 def input(cod):
@@ -31,14 +39,14 @@ def mapa():
 def formularios():
     return render_template('formularios.html')
 
-@app.route('/tables')
-def tables():
+@app.route('/results')
+def results():
     csv = pd.read_csv('files/table.csv', sep=';')
     html_table = csv.to_html(index=False)
     html_table = html_table.replace(' border="1" ', ' ')
     html_table = html_table.replace('dataframe', 'table')
 
-    return render_template('tables.html', html_table=html_table)
+    return render_template('results.html', html_table=html_table)
 
 
 if __name__ == '__main__':

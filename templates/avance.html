@@ -1,59 +1,74 @@
 {% extends 'layout.html' %}
 
+
+
 {% block title %}Avance{% endblock %}
+
+
+
+{% block jquery_script %} 
+<script>
+$(document).ready(function(){
+{% for n, centro in info.iterrows() %}
+    $("#show{{n}}").click(function(){
+        $("#showcontainer{{n}}").fadeToggle(150);
+        $("#details-icon{{n}}").fadeToggle();
+        return false;
+  });
+{% endfor %}
+});
+</script>
+{% endblock %}
+
+
 
 {% block body %}
 
+{% for n, centro in info.iterrows() %}
 <div class="row">
     <div class="col-12">
         <div class="card">
             <div class="card-block">
-                Poner barras de progreso para cada encuesta.
-            </div>
-        </div>
-    </div>
-</div>
+                <h4>
+                    {{centro['Nombre']}} <a href="{{url_for('input', cod=centro['Cod'])}}">(ver interfaz)</a>
+                </h4>
 
-
-<div class="row">
-    <div class="col-12">
-        <div class="card card-collapse">
-            <div class="card-header" id="headingOne">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    <h5 class="collapse-title">Región Metropolitana</h5>
-                </button>
-            </div>
-
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
-                <div class="card-block">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="row">
+                    <div class="col m-t-15  m-b-15">
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                <span style="color:#eceeef;">0%</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="card card-collapse">
-            <div class="card-header" id="headingTwo">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <h5 class="collapse-title">Región de Valparaíso</h5>
-                </button>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
-                <div class="card-block">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-            </div>
-        </div>
-        <div class="card card-collapse">
-            <div class="card-header" id="headingThree">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <h5 class="collapse-title">Región del Bío-Bío</h5>
-                </button>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
-                <div class="card-block">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                <h5>
+                    
+                <a id="show{{n}}" href="#">Detalles <i id="details-icon{{n}}" class="fa fa-angle-down m-r-10" aria-hidden="true" style="display:none;"></i></a>
+                </h5>
+
+                <div id="showcontainer{{n}}" class="container" style="display: none;">
+
+                    {% for n, form in forms[centro['Cod']].iterrows() %}
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label><i class="fa {{form['Icon']}} m-r-10" aria-hidden="true"></i>{{form['Nombre Módulo']}} <a href="{{form['Link']}}">(ver)</a></label>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                        <span style="color:#eceeef;">0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}  
+
                 </div>
             </div>
         </div>
     </div>
 </div>
+{% endfor %}
 {% endblock %}
