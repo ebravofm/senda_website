@@ -2,8 +2,6 @@ from flask import Flask, render_template
 import pandas as pd
 import gpandas as gpd
 
-
-
 app = Flask(__name__)
 
 @app.route('/ias-uchile')
