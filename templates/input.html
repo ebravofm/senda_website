@@ -8,16 +8,30 @@ $(document).ready(function(){
   $(".togHome").click(function(){
     $("#inputHome").fadeIn(500);
     $("#forms").hide();
+    $("#sheets").hide();
+    return false;
   });
 });
 
 $(document).ready(function(){
 {% for n, row in layout.iterrows() %}
+{% if 'qualtrics' in row['Link'] %}
   $(".{{row['tog']}}").click(function(){
     $("#qualtrics").attr("data", "{{row['Link']}}");
     $("#forms").fadeIn();
     $("#inputHome").hide();
+    $("#sheets").hide();
+    return false;
   });
+{% else %}
+  $(".{{row['tog']}}").click(function(){
+    $("#google").attr("data", "{{row['Link']}}");
+    $("#sheets").fadeIn();
+    $("#inputHome").hide();
+    $("#forms").hide();
+    return false;
+  });
+{% endif %}
 {% endfor %}
 });
 </script>
@@ -26,7 +40,6 @@ $(document).ready(function(){
 
 {% block dropdown%} 
     <a href="#" class="togHome dropdown-item" class="waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>Inicio</a>
-    
     {% for n, row in layout.iterrows() %}
     <a href="#" class="tog{{row['Nombre Módulo'].replace(' ', '')}} dropdown-item" class="waves-effect"><i class="fa {{row['Icon']}} m-r-10" aria-hidden="true"></i>{{row['Nombre Módulo']}}</a>
     {% endfor %}
@@ -35,10 +48,8 @@ $(document).ready(function(){
 
 {% block sidebar%} 
     <li><a href="#" class="togHome waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>Inicio</a></li>
-
     {% for n, row in layout.iterrows() %}
     <li><a href="#" class="tog{{row['Nombre Módulo'].replace(' ', '')}} waves-effect"><i class="fa {{row['Icon']}} m-r-10" aria-hidden="true"></i>{{row['Nombre Módulo']}}</a></li>
-
     {% endfor %}
 {% endblock %}
 
@@ -68,13 +79,19 @@ $(document).ready(function(){
 
 
 
+<div id="sheets" class="container-fluid bg-white" style="display:none; padding: 0;">
+    <div class="row" style="height: 1500px; min-height: 100%;">
+        <object id="google" type="text/html" data="" width="100%" height="100%" style="overflow:hidden;"></object>
+    </div>
+</div>
 
 <div id="forms" class="container-fluid bg-white" style="display:none;">
     <div class="row" style="height: 1500px; min-height: 100%;">
         <div class="offset-md-2 col-md-8">
-            <object id="qualtrics" type="text/html" data="" width="100%" height="100%" style="overflow:hidden;">
+            <object id="qualtrics" type="text/html" data="" width="100%" height="100%" style="overflow:hidden;"></object>
         </div>
     </div>
 </div>
+
 
 {% endblock %}
