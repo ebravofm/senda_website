@@ -9,7 +9,7 @@ def index():
     csv = pd.read_csv('files/centros.csv', sep=';')
     return render_template('index.html', csv = csv)
 
-@app.route('/avance')
+@app.route('/ias-uchile/avance')
 def avance():
     info = gpd.read_gexcel('1JV6tOulapdvDkT9RIEsf-rwUUefg9xHGYMuW4nFI_vM')
     formularios = gpd.gExcelFile('1svbIKSKB5v0LjKUgEt0_cqQRU83d_7fzRyoywMKKAHI')
@@ -30,15 +30,15 @@ def input(cod):
 
     return render_template('input.html', layout=layout)
 
-@app.route('/mapa')
+@app.route('/ias-uchile/mapa')
 def mapa():
     return render_template('mapa.html')
 
-@app.route('/formularios')
+@app.route('/ias-uchile/formularios')
 def formularios():
     return render_template('formularios.html')
 
-@app.route('/results')
+@app.route('/ias-uchile/results')
 def results():
     csv = pd.read_csv('files/table.csv', sep=';')
     html_table = csv.to_html(index=False)

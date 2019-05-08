@@ -9,7 +9,6 @@ $(document).ready(function(){
     $("#inputHome").fadeIn(500);
     $("#forms").hide();
     $("#sheets").hide();
-    return false;
   });
 });
 
@@ -21,7 +20,6 @@ $(document).ready(function(){
     $("#forms").fadeIn();
     $("#inputHome").hide();
     $("#sheets").hide();
-    return false;
   });
 {% else %}
   $(".{{row['tog']}}").click(function(){
@@ -29,7 +27,6 @@ $(document).ready(function(){
     $("#sheets").fadeIn();
     $("#inputHome").hide();
     $("#forms").hide();
-    return false;
   });
 {% endif %}
 {% endfor %}
@@ -39,7 +36,7 @@ $(document).ready(function(){
 
 
 {% block dropdown%} 
-    <a href="#" class="togHome dropdown-item" class="waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>Inicio</a>
+    <a href="#" class="togHome dropdown-item" class="waves-effect"><i class="fa fa-info-circle m-r-10" aria-hidden="true"></i>Instrucciones</a>
     {% for n, row in layout.iterrows() %}
     <a href="#" class="tog{{row['Nombre Módulo'].replace(' ', '')}} dropdown-item" class="waves-effect"><i class="fa {{row['Icon']}} m-r-10" aria-hidden="true"></i>{{row['Nombre Módulo']}}</a>
     {% endfor %}
@@ -47,7 +44,7 @@ $(document).ready(function(){
 
 
 {% block sidebar%} 
-    <li><a href="#" class="togHome waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>Inicio</a></li>
+    <li><a href="#" class="togHome waves-effect"><i class="fa fa-info-circle m-r-10" aria-hidden="true"></i>Instrucciones</a></li>
     {% for n, row in layout.iterrows() %}
     <li><a href="#" class="tog{{row['Nombre Módulo'].replace(' ', '')}} waves-effect"><i class="fa {{row['Icon']}} m-r-10" aria-hidden="true"></i>{{row['Nombre Módulo']}}</a></li>
     {% endfor %}
@@ -76,8 +73,6 @@ $(document).ready(function(){
         </div>
     </div>
 </div>
-
-
 
 <div id="sheets" class="container-fluid bg-white" style="display:none; padding: 0;">
     <div class="row" style="height: 1500px; min-height: 100%;">
