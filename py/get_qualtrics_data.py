@@ -13,27 +13,69 @@ import sys
 import os
 import io
 
-def zip2df(virtual_zip):
-    open_zip = zipfile.ZipFile(io.BytesIO(virtual_zip))
+
+def get_progress_table(survey_id='SV_3xSvA9utuIDlR2J'):
+    options = webdriver.ChromeOptions()
     
-    for file_name in open_zip.namelist():
-        csv_file = open_zip.read(file_name)
+    if sys.platform == 'linux':
+        display = Display(visible=0, size=(800, 600))
+        display.start()
+
+        options.add_argument(f"download.default_directory={os.getcwd()}")
+        options.add_argument('--no-sandbox')
+
+    d = webdriver.Chrome(options=options)
+
+    try:
+        d.get('https://login.qualtrics.com/login?lang=es-la')
+
+        login(d)
         
-    df = pd.read_csv(io.BytesIO(csv_file))
+        print('[+] Logged in.')
+        print('[·] Looking Progress Table...')
+
+        n = 0
+        while n<5:
+            try:
+
+                d.get(f'https://fenuchile.ca1.qualtrics.com/responses/#/surveys/{survey_id}')
+
+                wait = WebDriverWait(d, 2)
+                in_progress = wait.until(EC.element_to_be_clickable((By.XPATH, '//span[@data-key="RESPONSES_IN_PROGRESS"]')))
+                in_progress.click()
+                
+                n = 5
+            
+            except Exception as exc:
+                print(f'[-] Error. Reintentando... (url: {d.current_url})')
+                n += 1
+
+        sleep(5)
+        table = d.find_element_by_tag_name('table')
+        table_html = table.find_element_by_xpath('./..').get_attribute('innerHTML')
+        df = pd.read_html(table_html)
+        
+        if not df:
+            print('[-] Scraped empty table :()')
+        else:
+            print('[+] Succesfully scraped progress table')
+        
+    except Exception as exc:
+        print(str(exc))
+        print('[-] Error')
+        d.close()
+        if sys.platform == 'linux':
+            display.stop()
+        raise RuntimeError
+    
+    d.close()
+    if sys.platform == 'linux':
+        display.stop()
+    print('[+] Logged Out.')
     
     return df
-    
-def request_zip(link, webdriver_cookies):
-    
-    cookies = {}
-    for c in webdriver_cookies:
-        cookies[c['name']]=c['value']
-
-    virtual_zip = requests.get(link, cookies=cookies).content
-    
-    return virtual_zip
-
-
+                
+                
 def get_survey(survey_id='SV_3xSvA9utuIDlR2J'):
     options = webdriver.ChromeOptions()
     
@@ -49,9 +91,6 @@ def get_survey(survey_id='SV_3xSvA9utuIDlR2J'):
     try:
         d.get('https://login.qualtrics.com/login?lang=es-la')
 
-        '''cookies = pd.read_pickle('qualtrics.ck')
-        for cookie in cookies:
-                d.add_cookie(cookie)'''
         login(d)
         
         print('[+] Logged in.')
@@ -115,6 +154,28 @@ def get_survey(survey_id='SV_3xSvA9utuIDlR2J'):
     
     return df
     
+    
+
+def zip2df(virtual_zip):
+    open_zip = zipfile.ZipFile(io.BytesIO(virtual_zip))
+    
+    for file_name in open_zip.namelist():
+        csv_file = open_zip.read(file_name)
+        
+    df = pd.read_csv(io.BytesIO(csv_file))
+    
+    return df
+    
+def request_zip(link, webdriver_cookies):
+    
+    cookies = {}
+    for c in webdriver_cookies:
+        cookies[c['name']]=c['value']
+
+    virtual_zip = requests.get(link, cookies=cookies).content
+    
+    return virtual_zip
+
 def login(d):
     user = d.find_element_by_id('UserName')
     user.send_keys('ebravo@fen.uchile.cl')
