@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block title %}Test{% endblock %}
+
+{% block body %}
+
+<a id="button" href="#">Refresh</a>
+
+{% endblock %}
+
+
+
+{% block jquery_script %} 
+<script>
+$(document).ready(function(){
+    $("#button").click(function(){
+        $.get("{{ url_for('refresh_progress') }}")
+    });
+});
+
+</script>
+{% endblock %}
