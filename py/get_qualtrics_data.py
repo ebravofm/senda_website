@@ -41,7 +41,7 @@ def browser(func):
             d.close()
             if sys.platform == 'linux':
                 display.stop()
-            raise RuntimeError
+            raise RuntimeError(str(exc))
 
 
         d.close()
@@ -99,12 +99,13 @@ def get_progress(d, ids):
                 df = df[0]
                 df.columns = [col.strip() for col in df.columns]
                 progress = df[df.Email=='X']['Progress'][0]
+                
             except Exception as exc:
                 print('[-] error', exc)
                 progress = 'N/A'
         except NoSuchElementException:
             print('[-] Table does not exist.')        
-            progress = '0%'
+            progress = 'N/A'
         
         progress_dict[survey_id_] = progress   
             

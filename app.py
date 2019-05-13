@@ -1,3 +1,4 @@
+from py.update_progress import update_all
 from flask import Flask, render_template
 import pandas as pd
 import gpandas as gpd
@@ -9,13 +10,13 @@ app = Flask(__name__)
 
 @app.route('/ias-uchile')
 def index():
-    csv = pd.read_csv('files/centros.csv', sep=';')
+    csv = pd.read_csv('static/data/centros.csv', sep=';')
     return render_template('index.html', csv = csv)
 
 
 @app.route('/refresh-progress')
 def refresh_progress():
-    open('prueba.txt', 'w').write(str(datetime.datetime.now().time()))
+    update_all()
 
 
 @app.route('/test')
