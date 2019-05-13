@@ -23,11 +23,23 @@ $(document).ready(function(){
 $(document).ready(function(){
     $.getJSON("{{ url_for('static', filename='data/progress.json') }}").done(function(data) {
 {% for n, centro in info.iterrows() %}
-{% for n, form in forms[centro['Cod']].iterrows() %}
-        $("#{{centro['Cod'] + form['Nombre Módulo'].replace(' ', '')}}").attr('aria-valuenow', data["{{centro['Cod']}}"]["{{form['Nombre Módulo']}}"]);
-        $("#{{centro['Cod'] + form['Nombre Módulo'].replace(' ', '')}}").css('width', data["{{centro['Cod']}}"]["{{form['Nombre Módulo']}}"]);
-        $("#{{centro['Cod'] + form['Nombre Módulo'].replace(' ', '')}}").children('span').text(data["{{centro['Cod']}}"]["{{form['Nombre Módulo']}}"]);
-{% endfor %}
+var total{{n}} = 0;
+var i{{n}} = 0;
+    {% for m, form in forms[centro['Cod']].iterrows() %}
+            var p{{n}}_{{m}} = data["{{centro['Cod']}}"]["{{form['Nombre Módulo']}}"];
+            $("#{{centro['Cod'] + form['Nombre Módulo'].replace(' ', '')}}").attr('aria-valuenow', p{{n}}_{{m}});
+            $("#{{centro['Cod'] + form['Nombre Módulo'].replace(' ', '')}}").css('width', p{{n}}_{{m}}.toString()+'%');
+            $("#{{centro['Cod'] + form['Nombre Módulo'].replace(' ', '')}}").children('span').text(p{{n}}_{{m}}.toString()+'%');
+            total{{n}} = total{{n}} + p{{n}}_{{m}};
+            i{{n}} = i{{n}} + 1;
+    {% endfor %}
+
+total{{n}} = (total{{n}}/i{{n}}).toFixed(0);
+
+$("#{{centro['Cod']}}").attr('aria-valuenow', total{{n}});
+$("#{{centro['Cod']}}").css('width', total{{n}}.toString()+'%');
+$("#{{centro['Cod']}}").children('span').text(total{{n}}.toString()+'%');
+
 {% endfor %}
 
     });

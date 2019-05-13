@@ -1,4 +1,7 @@
-from .get_qualtrics_data import get_progress
+try:
+    from .get_qualtrics_data import get_progress
+except:
+    from get_qualtrics_data import get_progress
 from gspread_pandas import Spread
 import gpandas as gpd
 import pandas as pd
@@ -7,7 +10,7 @@ import json
 pd.options.mode.chained_assignment = None
 
 
-def update_all():
+def update_all(json_path='../static/data/progress.json'):
     
     full = get_full_form()
     full = get_historic_progress(full)
@@ -20,17 +23,18 @@ def update_all():
     p = get_progress(to_get_qualtrics)
 
     for x in p:
-        full.loc[full.Link == x, 'Progress'] = p[x]
+        full.loc[full.Link == x, 'Progress'] = int(p[x].replace('%', ''))
+        
         
     # Update spreadsheet
     S = Spread('ebravofm', '1My0exuCahxoaY78Aybw1NQQgA9C4DWFtEt34eQzVO5Q')
     S.df_to_sheet(full, index=False, replace=True, sheet='progress')
-    to_json(full)
-    
-    
+    to_json(full, json_path)
+
     return full
-    
-def to_json(df):
+
+
+def to_json(df, json_path='../static/data/progress.json'):
     
     df = df[['Centro', 'Nombre Módulo', 'Progress']]
     drec = dict()
@@ -48,7 +52,7 @@ def to_json(df):
                 if j!= ncols-2:
                     d = d[col]
     
-    with open('static/data/progress.json', 'w') as fp:
+    with open(json_path, 'w') as fp:
         json.dump(drec, fp)
     
     return drec
