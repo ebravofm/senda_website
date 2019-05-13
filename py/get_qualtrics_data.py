@@ -107,7 +107,8 @@ def get_progress(d, ids):
             print('[-] Table does not exist.')        
             progress = 'N/A'
         
-        progress_dict[survey_id_] = progress   
+        if progress != 'N/A':
+            progress_dict[survey_id_] = progress   
             
     return progress_dict
 

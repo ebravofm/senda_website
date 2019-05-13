@@ -17,6 +17,7 @@ def index():
 @app.route('/refresh-progress')
 def refresh_progress():
     update_all()
+    return 'Listo!'
 
 
 @app.route('/test')
@@ -64,4 +65,4 @@ def results():
 
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True, use_reloader=True)
+    app.run(port=5001, debug=True, use_reloader=True)

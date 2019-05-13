@@ -48,7 +48,7 @@ def to_json(df):
                 if j!= ncols-2:
                     d = d[col]
     
-    with open('../data/progress.json', 'w') as fp:
+    with open('static/data/progress.json', 'w') as fp:
         json.dump(drec, fp)
     
     return drec
