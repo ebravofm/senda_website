@@ -19,8 +19,9 @@ def update_all(json_path='../static/data/progress.json'):
     google = full[full.Link.str.contains('google')].reset_index()
     
     # Qualtrics
-    to_get_qualtrics = list(set(qualtrics['Link'].tolist()))
-    p = get_progress(to_get_qualtrics)
+    
+    qualtrics = qualtrics.drop_duplicates('Link')
+    p = get_progress(qualtrics)
 
     for x in p:
         full.loc[full.Link == x, 'Progress'] = int(p[x].replace('%', ''))

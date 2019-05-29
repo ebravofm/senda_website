@@ -16,14 +16,14 @@ $(document).ready(function(){
 {% for n, row in layout.iterrows() %}
 {% if 'qualtrics' in row['Link'] %}
   $(".{{row['tog']}}").click(function(){
-    $("#qualtrics").attr("data", "{{row['Link']}}");
+    $("#qualtrics").attr("data", "{{row['Link']|safe}}");
     $("#forms").fadeIn();
     $("#inputHome").hide();
     $("#sheets").hide();
   });
 {% else %}
   $(".{{row['tog']}}").click(function(){
-    $("#google").attr("data", "{{row['Link']}}");
+    $("#google").attr("data", "{{row['Link']|safe}}");
     $("#sheets").fadeIn();
     $("#inputHome").hide();
     $("#forms").hide();
@@ -55,10 +55,10 @@ $(document).ready(function(){
 <div id="inputHome" class="container-fluid">
     <div class="row page-titles">
         <div class="col-md-6 col-8 align-self-center">
-            <h3 class="text-themecolor m-b-0 m-t-0">{{ title_s }}</h3>
+            <h3 class="text-themecolor m-b-0 m-t-0">Instrucciones</h3>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ url_for('index')}}">Home</a></li>
-                <li class="breadcrumb-item active">{{ title_s }}</li>
+                <li class="breadcrumb-item active">Instrucciones</li>
             </ol>
         </div>
     </div>
@@ -66,8 +66,43 @@ $(document).ready(function(){
     <div class="row">
         <div class="col-12">
             <div class="card">
-                <div class="card-block">
-                    Esta es la página de inicio, que tendrá un breve mensaje de descripción y links a las demás funcionalidades.
+                <div class="card-block p-5">
+
+<h5>¡Bienvenid@!</h5>
+<p>Esta pagína web está diseñada para hacer lo más sencillo posible el poceso de reporte de información para el estudio de costos de los programas VAIS y OSL del SENDA. A continuación le explicaremos brevemente cómo funciona la página.</p>
+<p>Al costado izquierdo hay una barra lateral con 7 iconos. El primero es esta página: las instrucciones. Los 6 restantes representan cada uno de los módulos de información. Estos son:</p>
+
+<ul>
+<li>Personal y Usuarios: </li>
+<li>Vivienda/Oficina</li>
+<li>Mobiliario</li>
+<li>Gastos Básicos</li>
+<li>Otros Gastos</li>
+<li>Costos Indirectos</li>
+</ul>
+
+<p>Si presiona en cualqueira de ellos verá una página como la siguiente, en la cual encontrará la siguiente información:</p>
+
+<div class="p-4">
+<img src="{{ url_for('static', filename='images/first_page.png') }}" class="img-fluid w-50 img-thumbnail rounded mx-auto d-block">
+</div>
+
+<p>En cada página encontrará requerimientos de información e instrucciones de como llenarla. Encontrará un botón de <b class="text-themecolor">Siguiente</b> y un botón de <b class="text-themecolor">Atrás</b>, estos le permitirá navegar hacia adelante y hacia atrás en la encuesta. De este modo, si tiene un dato que queire cambiar, puede hacerlo con el boton de Atrás.</p>
+<div class="p-4">
+<img src="{{ url_for('static', filename='images/second_page.png') }}" class="img-fluid w-50 img-thumbnail rounded mx-auto d-block">
+</div>
+<p>La pestaña de costos indirectos en distinta, y se completa como cualquier planilla de Excel. Es recomendable contestar esta sección con apoyo del contador de la institución.</p>
+<p>Tenga en consideracion lo siguiente:
+    <ul> 
+<li>Puede acceder a la página desde cualquier tipo de dispositivo (computador, tablet o celular)</li>
+<li>La pagina guarda su avance, por lo tanto puede contestar una parte de la encuesta en un momento y luego retomar para terminar el resto.</li>
+<li>Este estudio pretende recoger información sobre todos los gastos en los que incurre la institución, por lo tanto debe reportar todos los gastos, independiente de si fueron financiados por el SENDA o financiamiento propio.</li>
+<li>Este estudio pretende recoger información sobre todos los gastos en los que incurre la institución, por lo tanto debe reportar todos los gastos, independiente de si fueron financiados por el SENDA o financiamiento propio.</li>
+<li>Cualquier duda puede escribir a <b class="text-themecolor">ias.vais.osl@gmail.com</b>.</li>
+    </ul>
+</p>
+
+
                 </div>
             </div>
         </div>

@@ -22,7 +22,6 @@ def browser(func):
         if sys.platform == 'linux':
             display = Display(visible=0, size=(800, 600))
             display.start()
-
             options.add_argument(f"download.default_directory={os.getcwd()}")
             options.add_argument('--no-sandbox')
 
@@ -55,20 +54,21 @@ def browser(func):
 
 
 @browser
-def get_progress(d, ids):
+def get_progress(d, survey_df):
     
     progress_dict = {}
     
-    if not isinstance(ids, list):
-        ids = [ids]
-        
     
-    for survey_id in ids:
+    for n, survey in survey_df.iterrows():
+        print()
+        
+        survey_id = survey['Link'].strip()
+        
         survey_id_ = survey_id
         if 'fenuchile' in survey_id :
             survey_id = survey_id.split('/')[survey_id.split('/').index('form')+1].split('?')[0]
         try:
-            print(f'[·] Looking Progress Table... (survey: {survey_id})')
+            print(f'[·] Looking Progress Table {survey["Centro"]}, {survey["Nombre Módulo"]}...')
 
             n = 0
 
@@ -93,22 +93,22 @@ def get_progress(d, ids):
             if not df:
                 print('[-] Scraped empty table :()')
             else:
-                print('[+] Succesfully scraped progress table')
+                print('[+] Table Found')
 
             try:
                 df = df[0]
                 df.columns = [col.strip() for col in df.columns]
                 progress = df[df.Email=='X']['Progress'][0]
+                print(f'[+] Progress: {survey["Centro"]}, {survey["Nombre Módulo"]}: {progress}')
                 
             except Exception as exc:
-                print('[-] error', exc)
-                progress = 'N/A'
+                print('[-] Table has no progress')
+                progress = '0%'
         except NoSuchElementException:
             print('[-] Table does not exist.')        
-            progress = 'N/A'
+            progress = '0%'
         
-        if progress != 'N/A':
-            progress_dict[survey_id_] = progress   
+        progress_dict[survey_id_] = progress   
             
     return progress_dict
 
@@ -212,6 +212,7 @@ def request_zip(link, webdriver_cookies):
     virtual_zip = requests.get(link, cookies=cookies).content
     
     return virtual_zip
+
 
 def login(d):
     user = d.find_element_by_id('UserName')
