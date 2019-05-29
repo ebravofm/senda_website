@@ -7,6 +7,7 @@ import datetime
 app = Flask(__name__)
 
 
+
 @app.route('/ias-uchile')
 def index():
     csv = pd.read_csv('static/data/centros.csv', sep=';')
