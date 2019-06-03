@@ -47,6 +47,7 @@ def browser(func):
         if sys.platform == 'linux':
             display.stop()
         print('[+] Logged Out.')
+        print()
 
         return result
     
@@ -54,16 +55,65 @@ def browser(func):
 
 
 @browser
+def get_table_from_id(d, validate_value, survey_id):
+    print()
+    n = 0
+
+    while n<5:
+        try:
+            # Go to URL
+            d.get(f'https://fenuchile.ca1.qualtrics.com/responses/#/surveys/{survey_id}')
+            
+            wait = WebDriverWait(d, 2)
+            
+            # Wait and click for progress button
+            in_progress = wait.until(EC.element_to_be_clickable((By.XPATH, '//span[@data-key="RESPONSES_IN_PROGRESS"]')))
+            in_progress.click()
+
+            n = 5
+
+        except Exception as exc:
+            print(f'[-] Error. Reintentando... (url: {d.current_url})')
+            n += 1
+
+    sleep(3)
+    
+    # Looking for table
+    try:
+        table = d.find_element_by_tag_name('table')
+        table_html = table.find_element_by_xpath('./..').get_attribute('innerHTML')
+        df = pd.read_html(table_html)
+        
+    except NoSuchElementException:
+        print('[-] Table does not exist.')
+        return None
+        
+    # Processing Table.
+    try:
+        df = df[0]
+        df.columns = [x.strip() for x in df.columns]
+        
+        if validate_value in df['Email'].tolist():
+            print(f'[+] {validate_value} Table Found!')
+            
+            return df
+            
+        else:
+            print('[-] Found Table but could not validate')
+    except Exception as exc:
+        print(f'[-] Error while processing table. {exc}')
+
+
+@browser
 def get_progress(d, survey_df):
     
     progress_dict = {}
     
-    
     for n, survey in survey_df.iterrows():
         print()
-        
+
         survey_id = survey['Link'].strip()
-        
+
         survey_id_ = survey_id
         if 'fenuchile' in survey_id :
             survey_id = survey_id.split('/')[survey_id.split('/').index('form')+1].split('?')[0]

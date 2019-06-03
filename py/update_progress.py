@@ -1,36 +1,57 @@
-try:
-    from .get_qualtrics_data import get_progress
-except:
-    from get_qualtrics_data import get_progress
 from gspread_pandas import Spread
 import gpandas as gpd
 import pandas as pd
 import json
+import numpy as np
+try:
+    from .get_qualtrics_data import get_progress, get_table_from_id
+except:
+    from get_qualtrics_data import get_progress, get_table_from_id
 
 pd.options.mode.chained_assignment = None
 
 
 def update_all(json_path='../static/data/progress.json'):
-    
+
     full = get_full_form()
     full = get_historic_progress(full)
 
     qualtrics = full[full.Link.str.contains('qualtrics')].reset_index()
     google = full[full.Link.str.contains('google')].reset_index()
-    
-    # Qualtrics
-    
-    qualtrics = qualtrics.drop_duplicates('Link')
-    p = get_progress(qualtrics)
 
-    for x in p:
-        full.loc[full.Link == x, 'Progress'] = int(p[x].replace('%', ''))
-        
-        
+    # Qualtrics
+
+    survey = qualtrics[['COD', 'Link']]
+    survey['Link'] = survey.Link.apply(lambda x: x.split('/')[5].split('?')[0])
+    survey = survey.drop_duplicates('Link')
+
+    surveys = survey.values.tolist()
+
+    progress = []
+    for s in surveys:
+        print()
+        print(f'[·] {s[0]}...')
+        table = get_table_from_id(s[0], s[1])
+        try:
+            table['COD'] = s[0]
+            table = table[['COD', 'Email', 'Progress']]
+            table.columns = ['COD', 'Centro', 'Progress']
+            progress.append(table)
+        except TypeError:
+            print('[-] No table to append.')
+
+    progress_df = pd.concat(progress)
+    progress_df['Progress'] = progress_df['Progress'].apply(lambda x: int(str(x).replace('%', '')))
+
+
+    result = pd.merge(full, progress_df, 'left', on=['COD', 'Centro'])
+    result['Progress'] = np.where(result.Progress_y.isnull(), result.Progress_x, result.Progress_y)
+    result = result.drop(['Progress_x', 'Progress_y'], axis=1)
+
     # Update spreadsheet
     S = Spread('ebravofm', '1My0exuCahxoaY78Aybw1NQQgA9C4DWFtEt34eQzVO5Q')
-    S.df_to_sheet(full, index=False, replace=True, sheet='progress')
-    to_json(full, json_path)
+    S.df_to_sheet(result, index=False, replace=True, sheet='progress')
+    to_json(result, json_path)
 
     return full
 

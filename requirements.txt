@@ -1,2 +1,6 @@
 pandas
 flask
+xlrd
+xlutils
+pyexcel-xls
+pyexcel
