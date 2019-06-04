@@ -7,17 +7,22 @@ try:
     from .get_qualtrics_data import get_progress, get_table_from_id
 except:
     from get_qualtrics_data import get_progress, get_table_from_id
+import warnings
 
 pd.options.mode.chained_assignment = None
 
 
 def update_all(json_path='../static/data/progress.json'):
+    warnings.filterwarnings("ignore")
 
     full = get_full_form()
     full = get_historic_progress(full)
 
     qualtrics = full[full.Link.str.contains('qualtrics')].reset_index()
     google = full[full.Link.str.contains('google')].reset_index()
+    
+    # Google
+    
 
     # Qualtrics
 
@@ -27,31 +32,42 @@ def update_all(json_path='../static/data/progress.json'):
 
     surveys = survey.values.tolist()
 
-    progress = []
+    progress_qualtrics = []
     for s in surveys:
-        print()
         print(f'[·] {s[0]}...')
+        print()
         table = get_table_from_id(s[0], s[1])
         try:
             table['COD'] = s[0]
             table = table[['COD', 'Email', 'Progress']]
             table.columns = ['COD', 'Centro', 'Progress']
-            progress.append(table)
+            progress_qualtrics.append(table)
         except TypeError:
             print('[-] No table to append.')
 
-    progress_df = pd.concat(progress)
-    progress_df['Progress'] = progress_df['Progress'].apply(lambda x: int(str(x).replace('%', '')))
+    progress_qualtrics_df = pd.concat(progress_qualtrics)
+    progress_qualtrics_df['Progress'] = progress_qualtrics_df['Progress'].apply(lambda x: int(str(x).replace('%', '')))
 
+    # Merge
 
-    result = pd.merge(full, progress_df, 'left', on=['COD', 'Centro'])
-    result['Progress'] = np.where(result.Progress_y.isnull(), result.Progress_x, result.Progress_y)
+    result = pd.merge(full, progress_qualtrics_df, 'left', on=['COD', 'Centro'])
+    result['Progress'] = np.where(result.Progress_y.isnull(), result.Progress_x, result.Progress_y).astype(int)
     result = result.drop(['Progress_x', 'Progress_y'], axis=1)
-
+    
+    print()
+    print(result[['COD', 'Centro', 'Progress']])
+    print()
+    
     # Update spreadsheet
-    S = Spread('ebravofm', '1My0exuCahxoaY78Aybw1NQQgA9C4DWFtEt34eQzVO5Q')
-    S.df_to_sheet(result, index=False, replace=True, sheet='progress')
-    to_json(result, json_path)
+    
+    try:
+        S = Spread('ebravofm', '1My0exuCahxoaY78Aybw1NQQgA9C4DWFtEt34eQzVO5Q')
+        S.df_to_sheet(result, index=False, replace=True, sheet='progress')
+        to_json(result, json_path)
+
+        print('[+] PROGRESS TABLE UPDATED.')
+    except exception as exc:
+        print('[-] Could not update table.', exc)
 
     return full
 

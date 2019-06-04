@@ -56,7 +56,6 @@ def browser(func):
 
 @browser
 def get_table_from_id(d, validate_value, survey_id):
-    print()
     n = 0
 
     while n<5:
@@ -73,7 +72,7 @@ def get_table_from_id(d, validate_value, survey_id):
             n = 5
 
         except Exception as exc:
-            print(f'[-] Error. Reintentando... (url: {d.current_url})')
+            #print(f'[-] Error. Reintentando... (url: {d.current_url})')
             n += 1
 
     sleep(3)
