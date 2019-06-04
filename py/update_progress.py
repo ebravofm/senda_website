@@ -44,6 +44,7 @@ def update_all(json_path='../static/data/progress.json'):
             progress_qualtrics.append(table)
         except TypeError:
             print('[-] No table to append.')
+            
 
     progress_qualtrics_df = pd.concat(progress_qualtrics)
     progress_qualtrics_df['Progress'] = progress_qualtrics_df['Progress'].apply(lambda x: int(str(x).replace('%', '')))
@@ -61,7 +62,7 @@ def update_all(json_path='../static/data/progress.json'):
     # Update spreadsheet
     
     try:
-        S = Spread('ebravofm', '1My0exuCahxoaY78Aybw1NQQgA9C4DWFtEt34eQzVO5Q')
+        S = Spread(user = 'ebravofm', spread = '1My0exuCahxoaY78Aybw1NQQgA9C4DWFtEt34eQzVO5Q', user_creds_or_client=None)
         S.df_to_sheet(result, index=False, replace=True, sheet='progress')
         to_json(result, json_path)
 
