@@ -14,11 +14,11 @@ except:
 
     
     
-def update_qualtrics_progress():
+def update_qualtrics_progress(json_path='../static/data/progress.json'):
     
     progress_df = check_qualtrics_progress()
     
-    update_progress(progress_df, '../static/data/progress.json')
+    update_progress(progress_df, json_path)
     
     
 def check_qualtrics_progress():
