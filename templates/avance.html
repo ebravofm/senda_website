@@ -21,7 +21,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-    $.getJSON("{{ url_for('static', filename='data/progress.json') }}").done(function(data) {
+    $.getJSON("{{ url_for('static', filename='data/progress.json') }}?r=" + Math.random()).done(function(data) {
 {% for n, centro in info.iterrows() %}
 var total{{n}} = 0;
 var i{{n}} = 0;
