@@ -17,7 +17,7 @@ except:
     TODO: Add IF len>3'''
 
     
-def dump_responses():
+def dump_responses(response_folder='../static/data/responses'):
     survey_ids = get_qualtrics_ids()
 
     progress = []
@@ -27,12 +27,18 @@ def dump_responses():
         try:
             response_table = get_survey_responses(s[1])
             response_table['COD'] = s[0]
-
-            response_table.to_csv(f'../static/data/responses/{s[0]}_{s[1]}.tsv', sep='\t', encoding='utf-8-sig', index=False)
-            print(f'[+] Succesfully dumped response {s[0]} {s[1]}')
-            print()
             
-            progress.append(get_progress_100(response_table))
+            if len(response_table) > 2:
+
+                response_table.to_csv(f'{response_folder}/{s[0]}_{s[1]}.tsv', sep='\t', encoding='utf-8-sig', index=False)
+                print(f'[+] Succesfully dumped response {s[0]} {s[1]}')
+                print()
+
+                progress.append(get_progress_100(response_table))
+
+            else:
+                print(f'[-] Response table empty {s[0]} {s[1]}')
+                print()
 
         except Exception as exc:
             print(f'[-] Could not dump response {s[0]} {s[1]}', exc)
