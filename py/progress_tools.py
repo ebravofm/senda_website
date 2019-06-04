@@ -4,39 +4,39 @@ import pandas as pd
 import json
 import numpy as np
 try:
-    from .get_qualtrics_data import get_progress, get_table_from_id
+    from .selenium_tools import get_progress, get_survey_progress
 except:
-    from get_qualtrics_data import get_progress, get_table_from_id
+    from selenium_tools import get_progress, get_survey_progress
 import warnings
 
 pd.options.mode.chained_assignment = None
 
 
-def update_all(json_path='../static/data/progress.json'):
+def update_progress(json_path='../static/data/progress.json'):
     warnings.filterwarnings("ignore")
 
-    full = get_full_form()
-    full = get_historic_progress(full)
+    survey_df = get_survey_df()
+    survey_df = pop_current_progress(survey_df)
 
-    qualtrics = full[full.Link.str.contains('qualtrics')].reset_index()
-    google = full[full.Link.str.contains('google')].reset_index()
+    qualtrics = survey_df[survey_df.Link.str.contains('qualtrics')].reset_index()
+    google = survey_df[survey_df.Link.str.contains('google')].reset_index()
     
     # Google
     
 
     # Qualtrics
 
-    survey = qualtrics[['COD', 'Link']]
-    survey['Link'] = survey.Link.apply(lambda x: x.split('/')[5].split('?')[0])
-    survey = survey.drop_duplicates('Link')
+    survey_links = qualtrics[['COD', 'Link']]
+    survey_links['Link'] = survey_links.Link.apply(lambda x: x.split('/')[5].split('?')[0])
+    survey_links = survey_links.drop_duplicates('Link')
 
-    surveys = survey.values.tolist()
+    surveys = survey_links.values.tolist()
 
     progress_qualtrics = []
     for s in surveys:
         print(f'[·] {s[0]}...')
         print()
-        table = get_table_from_id(s[0], s[1])
+        table = get_survey_progress(s[0], s[1])
         try:
             table['COD'] = s[0]
             table = table[['COD', 'Email', 'Progress']]
@@ -44,13 +44,14 @@ def update_all(json_path='../static/data/progress.json'):
             progress_qualtrics.append(table)
         except TypeError:
             print('[-] No table to append.')
+            
 
     progress_qualtrics_df = pd.concat(progress_qualtrics)
     progress_qualtrics_df['Progress'] = progress_qualtrics_df['Progress'].apply(lambda x: int(str(x).replace('%', '')))
 
     # Merge
 
-    result = pd.merge(full, progress_qualtrics_df, 'left', on=['COD', 'Centro'])
+    result = pd.merge(survey_df, progress_qualtrics_df, 'left', on=['COD', 'Centro'])
     result['Progress'] = np.where(result.Progress_y.isnull(), result.Progress_x, result.Progress_y).astype(int)
     result = result.drop(['Progress_x', 'Progress_y'], axis=1)
     
@@ -61,7 +62,7 @@ def update_all(json_path='../static/data/progress.json'):
     # Update spreadsheet
     
     try:
-        S = Spread('ebravofm', '1My0exuCahxoaY78Aybw1NQQgA9C4DWFtEt34eQzVO5Q')
+        S = Spread(user = 'ebravofm', spread = '1My0exuCahxoaY78Aybw1NQQgA9C4DWFtEt34eQzVO5Q', user_creds_or_client=None)
         S.df_to_sheet(result, index=False, replace=True, sheet='progress')
         to_json(result, json_path)
 
@@ -69,7 +70,7 @@ def update_all(json_path='../static/data/progress.json'):
     except exception as exc:
         print('[-] Could not update table.', exc)
 
-    return full
+    return survey_df
 
 
 def to_json(df, json_path='../static/data/progress.json'):
@@ -95,26 +96,27 @@ def to_json(df, json_path='../static/data/progress.json'):
     
     return drec
 
-def get_full_form():
+
+def get_survey_df():
 
     id_ = '1svbIKSKB5v0LjKUgEt0_cqQRU83d_7fzRyoywMKKAHI'
     forms = gpd.gExcelFile(id_)
 
-    full_ = []
+    survey_df_ = []
     
     for sheet_name in forms.sheet_names:
         sheet = forms.parse(sheet_name)
         sheet['Centro'] = sheet_name
         sheet.dropna(inplace=True)
 
-        full_.append(sheet)
+        survey_df_.append(sheet)
 
-    full = pd.concat(full_)
+    survey_df = pd.concat(survey_df_)
     
-    return full
+    return survey_df
 
 
-def get_historic_progress(df):
+def pop_current_progress(df):
     
     df['Progress'] = 'N/A'
     historic = gpd.read_gexcel('1My0exuCahxoaY78Aybw1NQQgA9C4DWFtEt34eQzVO5Q', sheet_name='progress')[['Link', 'Progress']]

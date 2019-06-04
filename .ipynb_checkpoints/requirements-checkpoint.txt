@@ -1,4 +1,0 @@
-pandas
-flask
-xlrd
-xlutils

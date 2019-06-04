@@ -64,7 +64,9 @@ $("#{{centro['Cod']}}").children('span').text(total{{n}}.toString()+'%');
                 <h4>
                     {{centro['Nombre']}}<a href="{{url_for('input', cod=centro['Cod'])}}" target="_blank"><i class="fa fa-external-link m-l-10" aria-hidden="true"></i>
                     </a>
+                        <a class="m-r-10" id="show{{n}}" href="#" style="float: right;"><i id="details-icon{{n}}" class="fa fa-angle-down m-r-10" aria-hidden="true" style="display:none;"></i>Detalles</a>
                 </h4>
+
 
                 <div class="row">
                     <div class="col m-t-15  m-b-15">
@@ -75,11 +77,6 @@ $("#{{centro['Cod']}}").children('span').text(total{{n}}.toString()+'%');
                         </div>
                     </div>
                 </div>
-
-                <h5>
-                    
-                <a id="show{{n}}" href="#">Detalles <i id="details-icon{{n}}" class="fa fa-angle-down m-r-10" aria-hidden="true" style="display:none;"></i></a>
-                </h5>
 
                 <div id="showcontainer{{n}}" class="container" style="display: none;">
 

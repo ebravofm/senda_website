@@ -1,4 +1,4 @@
-from py.update_progress import update_all
+from py.progress_tools import update_progress
 from flask import Flask, render_template
 import pandas as pd
 import gpandas as gpd
@@ -15,7 +15,7 @@ def index():
 
 @app.route('/refresh-progress')
 def refresh_progress():
-    update_all('static/data/progress.json')
+    update_progress('static/data/progress.json')
     return 'Listo!'
 
 
