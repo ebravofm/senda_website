@@ -1,7 +1,7 @@
 try:
-    from .progress_tools import update_progress
+    from .progress_tools import update_qualtrics_progress
 except:
-    from progress_tools import update_progress
+    from progress_tools import update_qualtrics_progress
 import os
 
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
