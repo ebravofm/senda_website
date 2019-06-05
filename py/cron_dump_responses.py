@@ -7,5 +7,9 @@ import os
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 if __name__ == '__main__':
-    print(os.getcwd())
-    dump_responses(response_folder='../static/data/responses')
+    response_folder='../static/data/responses'
+    
+    if not os.path.exists(response_folder):
+        os.mkdir(response_folder)
+
+    dump_responses(response_folder)

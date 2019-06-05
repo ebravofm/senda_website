@@ -47,6 +47,7 @@ def check_qualtrics_progress():
             progress_qualtrics.append(table)
         except TypeError:
             print('[-] No table to append.')
+        print()
             
 
     progress_qualtrics_df = pd.concat(progress_qualtrics)
