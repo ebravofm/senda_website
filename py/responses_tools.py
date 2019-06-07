@@ -13,9 +13,6 @@ try:
 except:
     from progress_tools import update_progress
 
-    '''
-    TODO: Add IF len>3'''
-
     
 def dump_responses(response_folder='../static/data/responses'):
     survey_ids = get_qualtrics_ids()

@@ -4,12 +4,14 @@ import pandas as pd
 import gpandas as gpd
 import datetime
 
+
 app = Flask(__name__)
 
 
 @app.route('/ias-uchile')
 def index():
-    csv = pd.read_csv('static/data/centros.csv', sep=';')
+    #csv = pd.read_csv('static/data/centros.csv', sep=';')
+    csv = gpd.read_gexcel('1JV6tOulapdvDkT9RIEsf-rwUUefg9xHGYMuW4nFI_vM')
     return render_template('index.html', csv = csv)
 
 
@@ -64,4 +66,4 @@ def results():
 
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True, use_reloader=True)
+    app.run(port=5001, debug=True, use_reloader=True)
