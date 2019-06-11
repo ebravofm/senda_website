@@ -91,7 +91,8 @@ def pop_matrix_questions(row):
                 row[row.index.str.contains(code)] = row[code]
             except Exception as exc:
                 #print('Error filling matrix' + str(exc))
-            
+                pass
+    
     return row
 
 
