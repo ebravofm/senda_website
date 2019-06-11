@@ -49,18 +49,12 @@ def update_gspread_progress(progress_df):
                   'INDIRECTOS': 'C14'}
 
     for centro in progress_df.Centro.unique():
-        try:
-            S = Spread(user = 'ebravofm', spread = ids[centro], user_creds_or_client=None)
+        S = Spread(user = 'ebravofm', spread = ids[centro], user_creds_or_client=None)
 
-            centro_df = progress_df[progress_df.Centro==centro]
+        centro_df = progress_df[progress_df.Centro==centro]
 
-            for n, row in centro_df.iterrows():
-                S.sheets[0].update_acell(coords[row['COD']], row['Progress'])
-        except Exception as exc:
-            print('[-] Error:', str(exc))
-
-    
-
+        for n, row in centro_df.iterrows():
+            S.sheets[0].update_acell(coords[row['COD']], row['Progress'])
     
     
 def check_qualtrics_progress():
