@@ -3,7 +3,6 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from pyvirtualdisplay import Display
-from bs4 import BeautifulSoup as bs
 from selenium import webdriver
 from time import sleep
 import pandas as pd

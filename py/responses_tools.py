@@ -27,7 +27,7 @@ def dump_responses(response_folder='../static/data/responses'):
             
             if len(response_table) > 2:
 
-                response_table.to_csv(f'{response_folder}/{s[0]}_{s[1]}.tsv', sep='\t', encoding='utf-8-sig', index=False)
+                response_table.to_csv(f'{response_folder}/{s[0]}.tsv', sep='\t', encoding='utf-8-sig', index=False)
                 print(f'[+] Succesfully dumped response {s[0]} {s[1]}')
                 print()
 
@@ -41,11 +41,14 @@ def dump_responses(response_folder='../static/data/responses'):
             print(f'[-] Could not dump response {s[0]} {s[1]}', exc)
             print()
             
-    progress_100 = pd.concat(progress)
+    try:
+        progress_100 = pd.concat(progress)
+        update_progress(progress_100)
+
+    except ValueError:
+        pass
+
     
-    update_progress(progress_100)
-
-
 def get_progress_100(response_table):
     response_table = response_table[2:]
     centros = response_table['RecipientEmail'].tolist()
@@ -54,3 +57,6 @@ def get_progress_100(response_table):
     df = pd.DataFrame({'COD': COD, 'Centro': centros, 'Progress': [100]*len(centros)})
     
     return df
+      
+
+        

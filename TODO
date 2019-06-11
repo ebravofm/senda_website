@@ -1,5 +1,4 @@
 populate google sheet.
-libreoffice --headless --convert-to xls myfile.xlsx
 alternative google sheet populate results
 indicadores
 progress google sheets

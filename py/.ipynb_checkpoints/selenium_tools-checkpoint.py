@@ -3,7 +3,6 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from pyvirtualdisplay import Display
-from bs4 import BeautifulSoup as bs
 from selenium import webdriver
 from time import sleep
 import pandas as pd
@@ -47,7 +46,6 @@ def browser(func):
         if sys.platform == 'linux':
             display.stop()
         print('[+] Logged Out.')
-        print()
 
         return result
     
@@ -117,7 +115,7 @@ def get_survey_responses(d, survey_id='SV_ai0xqAeLoKVVUGN'):
             n = 5
 
         except Exception as exc:
-            print(f'[-] Error. Reintentando... (url: {d.current_url})')
+            #print(f'[-] Error. Reintentando... (url: {d.current_url})')
             n += 1
         
     sleep(2)

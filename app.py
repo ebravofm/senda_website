@@ -1,4 +1,4 @@
-from py.progress_tools import update_progress
+from py.progress_tools import update_qualtrics_progress
 from flask import Flask, render_template
 import pandas as pd
 import gpandas as gpd
@@ -10,14 +10,13 @@ app = Flask(__name__)
 
 @app.route('/ias-uchile')
 def index():
-    #csv = pd.read_csv('static/data/centros.csv', sep=';')
     csv = gpd.read_gexcel('1JV6tOulapdvDkT9RIEsf-rwUUefg9xHGYMuW4nFI_vM')
     return render_template('index.html', csv = csv)
 
 
 @app.route('/refresh-progress')
 def refresh_progress():
-    update_progress('static/data/progress.json')
+    update_qualtrics_progress(json_path='static/data/progress.json')
     return 'Listo!'
 
 
@@ -29,6 +28,8 @@ def test():
 @app.route('/ias-uchile/avance')
 def avance():
     info = gpd.read_gexcel('1JV6tOulapdvDkT9RIEsf-rwUUefg9xHGYMuW4nFI_vM')
+    info = info[~info.Cod.str.contains('TEST')]
+
     formularios = gpd.gExcelFile('1svbIKSKB5v0LjKUgEt0_cqQRU83d_7fzRyoywMKKAHI')
 
     forms = {}
@@ -37,6 +38,21 @@ def avance():
         forms[centro].dropna(inplace=True)
 
     return render_template('avance.html', info=info, forms=forms)
+
+
+@app.route('/ias-uchile/avance/test')
+def avance_test():
+    info = gpd.read_gexcel('1JV6tOulapdvDkT9RIEsf-rwUUefg9xHGYMuW4nFI_vM')
+
+    formularios = gpd.gExcelFile('1svbIKSKB5v0LjKUgEt0_cqQRU83d_7fzRyoywMKKAHI')
+
+    forms = {}
+    for centro in formularios.sheet_names:
+        forms[centro] = formularios.parse(centro)
+        forms[centro].dropna(inplace=True)
+
+    return render_template('avance.html', info=info, forms=forms)
+
 
 @app.route('/input/<cod>')
 def input(cod):
@@ -47,13 +63,11 @@ def input(cod):
 
     return render_template('input.html', layout=layout)
 
+
 @app.route('/ias-uchile/mapa')
 def mapa():
     return render_template('mapa.html')
 
-@app.route('/ias-uchile/formularios')
-def formularios():
-    return render_template('formularios.html')
 
 @app.route('/ias-uchile/results')
 def results():
@@ -66,4 +80,4 @@ def results():
 
 
 if __name__ == '__main__':
-    app.run(port=5001, debug=True, use_reloader=True)
+    app.run(port=5000, debug=True, use_reloader=True)
