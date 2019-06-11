@@ -9,9 +9,9 @@ try:
 except:
     from basic_tools import get_qualtrics_ids
 try:
-    from .progress_tools import update_progress
+    from .progress_tools import update_progress, update_gspread_progress
 except:
-    from progress_tools import update_progress
+    from progress_tools import update_progress, update_gspread_progress
 
     
 def dump_responses(response_folder='../static/data/responses'):
@@ -44,6 +44,7 @@ def dump_responses(response_folder='../static/data/responses'):
     try:
         progress_100 = pd.concat(progress)
         update_progress(progress_100)
+        update_gspread_progress(progress_100)
 
     except ValueError:
         pass
