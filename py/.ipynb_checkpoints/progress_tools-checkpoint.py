@@ -47,6 +47,9 @@ def update_gspread_progress(progress_df):
                   'BASICOS': 'C12',
                   'OTROS': 'C13',
                   'INDIRECTOS': 'C14'}
+    
+    print(progress_df)
+    print(progress_df.Centro.unique())
 
     for centro in progress_df.Centro.unique():
         S = Spread(user = 'ebravofm', spread = ids[centro], user_creds_or_client=None)
