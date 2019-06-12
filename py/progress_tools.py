@@ -16,7 +16,7 @@ except:
     
 def update_qualtrics_progress(json_path='../static/data/progress.json'):
     
-    progress_df = check_qualtrics_progress()
+    progress_df = check_progress()
     
     update_progress(progress_df, json_path)
     
@@ -50,26 +50,40 @@ def update_gspread_progress(progress_df):
     
     centros = [c for c in progress_df.Centro.unique() if c not in ['RRHH', 'USUARIOS-VAIS', 'INFRAESTRUCTURA','MOBILIARIO-VAIS', 'BASICOS', 'OTROS', 'USUARIOS-OSL', 'MOBILIARIO-OSL']]
 
-    for centro in progress_df.Centro.unique():
+    for centro in centros:
         print(f'[·] Processing {centro} GSpread...')
         S = Spread(user = 'ebravofm', spread = ids[centro], user_creds_or_client=None)
 
         centro_df = progress_df[progress_df.Centro==centro]
 
         for n, row in centro_df.iterrows():
-            print(f'[·] {n}...')
-            S.sheets[0].update_acell(coords[row['COD']], row['Progress'])
-        print('[+] Success.')
-    
-    
-def check_qualtrics_progress():
-    
-    survey_df = get_survey_df()
-    survey_df = pop_current_progress(survey_df)
+            try:
+                #print(f'[·] {row['COD']}...')
+                S.sheets[0].update_acell(coords[row['COD']], row['Progress'])
+            except KeyError:
+                pass
 
-    qualtrics = survey_df[survey_df.Link.str.contains('qualtrics')].reset_index()
-    google = survey_df[survey_df.Link.str.contains('google')].reset_index()
+    print('[+] Success.')
     
+    
+def google_progress(google):
+    
+    for link in google['Link'].unique():
+        #print(link)
+        indirectos = gpd.read_gexcel(link).iloc[:,-1].fillna('')
+        i = indirectos[indirectos == 'MONTO TOTAL ANUAL'].index[0]
+        values = indirectos[i+1:]
+        empty_count = values.value_counts()['']
+        percent = round(((len(values)-empty_count)/len(values))*100)
+        #print(percent)
+        
+        google['Progress'] = np.where(google.Link==link, percent, google.Progress).astype(int)
+
+    google = google[['COD', 'Centro', 'Progress']]
+        
+    return google
+
+def qualtrics_progress(qualtrics):
     survey_links = qualtrics[['COD', 'Link']]
     survey_links['Link'] = survey_links.Link.apply(lambda x: x.split('/')[5].split('?')[0])
     survey_links = survey_links.drop_duplicates('Link')
@@ -90,11 +104,29 @@ def check_qualtrics_progress():
             print('[-] No table to append.')
         print()
             
-
     progress_qualtrics_df = pd.concat(progress_qualtrics)
     progress_qualtrics_df['Progress'] = progress_qualtrics_df['Progress'].apply(lambda x: int(str(x).replace('%', '')))
     
     return progress_qualtrics_df
+    
+def check_progress():
+    
+    survey_df = get_survey_df()
+    survey_df = pop_current_progress(survey_df)
+
+    qualtrics_input = survey_df[survey_df.Link.str.contains('qualtrics')].reset_index()
+    google_input = survey_df[survey_df.Link.str.contains('google')].reset_index()
+    
+    # Google
+    google = google_progress(google_input)
+    
+    # Qualtrics
+    qualtrics = qualtrics_progress(qualtrics_input)
+    
+    
+    progress_df = pd.concat([qualtrics, google])
+    
+    return progress_df
 
 
 def update_progress(progress_df, json_path='../static/data/progress.json'):
@@ -126,6 +158,18 @@ def update_progress(progress_df, json_path='../static/data/progress.json'):
     return survey_df
 
 
+def pop_current_progress(df):
+    
+    df['Progress'] = 'N/A'
+    historic = gpd.read_gexcel('1My0exuCahxoaY78Aybw1NQQgA9C4DWFtEt34eQzVO5Q', sheet_name='progress')[['Link', 'Progress']]
+    historic.index = historic.Link
+    historic = historic[['Progress']].dropna(how='any').to_dict()['Progress']
+    for x in historic:
+        df.loc[df.Link == x, 'Progress'] = historic[x]
+    
+    return df
+
+
 def to_json(df, json_path='../static/data/progress.json'):
     
     df = df[['Centro', 'Nombre Módulo', 'Progress']]
@@ -148,15 +192,3 @@ def to_json(df, json_path='../static/data/progress.json'):
         json.dump(drec, fp)
     
     return drec
-
-
-def pop_current_progress(df):
-    
-    df['Progress'] = 'N/A'
-    historic = gpd.read_gexcel('1My0exuCahxoaY78Aybw1NQQgA9C4DWFtEt34eQzVO5Q', sheet_name='progress')[['Link', 'Progress']]
-    historic.index = historic.Link
-    historic = historic[['Progress']].dropna(how='any').to_dict()['Progress']
-    for x in historic:
-        df.loc[df.Link == x, 'Progress'] = historic[x]
-    
-    return df
