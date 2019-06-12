@@ -51,12 +51,15 @@ def update_gspread_progress(progress_df):
     centros = [c for c in progress_df.Centro.unique() if c not in ['RRHH', 'USUARIOS-VAIS', 'INFRAESTRUCTURA','MOBILIARIO-VAIS', 'BASICOS', 'OTROS', 'USUARIOS-OSL', 'MOBILIARIO-OSL']]
 
     for centro in progress_df.Centro.unique():
+        print(f'[·] Processing {centro} GSpread...')
         S = Spread(user = 'ebravofm', spread = ids[centro], user_creds_or_client=None)
 
         centro_df = progress_df[progress_df.Centro==centro]
 
         for n, row in centro_df.iterrows():
+            print(f'[·] {n}...')
             S.sheets[0].update_acell(coords[row['COD']], row['Progress'])
+        print('[+] Success.')
     
     
 def check_qualtrics_progress():

@@ -1,18 +1,51 @@
 {% extends 'layout.html' %}
 
-{% block title %}Tablas{% endblock %}
+{% block title %}Resultados{% endblock %}
+
 
 {% block body %}
 <div class="row">
-    <!-- column -->
     <div class="col-sm-12">
         <div class="card">
             <div class="card-block">
-                <h4 class="card-title">Corporacion Cristo Obrero (Valparaíso)</h4>
-                <h6 class="card-subtitle">Recursos Humanos</h6>
                 <div class="table-responsive">
-                    {{ html_table|safe }}
+                    <table class="table stylish-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Centro</th>
+                                <th style="text-align: center;">Avance</th>
+                                <th style="text-align: center;">Ver/Descargar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for n, centro in info.iterrows() %}
 
+                            <tr>
+                                <td style="width:50px;"><span class="round {{ color[n] }}">{{ centro['Letra'] }}</span></td>
+                                <td>
+                                    <h6>{{ centro['Nombre'] }}</h6><small class="text-muted">{{ centro['Tipo'] }}</small>
+                                </td>
+                                <td style="text-align: center;">
+                                    {% for n, form in progress.loc[centro['Cod']].iterrows() %}
+
+                                    <i title="{{ form['Title'] }}" class="fa {{ form['Icon'] }} px-1" aria-hidden="true" style="color: {{ form['Color'] }};"></i>
+
+                                    {% endfor %}
+
+                                </td>
+                                <td style="text-align: center;">
+                                    <a title="Ver" href="https://docs.google.com/spreadsheets/d/{{ gsheets[centro['Cod']] }}/edit#gid=0" target="_blank" class="waves-effect">
+                                        <i class="fa fa-desktop m-r-10" aria-hidden="true" style="font-size: 20px;"></i>
+                                    </a>
+                                    <a title="Descargar" href="https://docs.google.com/spreadsheets/d/{{ gsheets[centro['Cod']] }}/export?format=xlsx&id={{ gsheets[centro['Cod']] }}" class="waves-effect">
+                                        <i class="fa fa-download m-r-10" aria-hidden="true" style="font-size: 20px;"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            
+                            {% endfor %}
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
