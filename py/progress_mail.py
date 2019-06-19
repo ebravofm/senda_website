@@ -74,4 +74,7 @@ def main():
 
     os.system('sendmail -t < progress_mail.txt')
 
+if __name__ == "__main__":
+    main()
+
     
