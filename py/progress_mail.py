@@ -61,11 +61,11 @@ def main():
         css = f.read()
 
     html = f'''From: Servidor SENDA <quimera.server@gmail.com>
-    To: Emilio <emo.bravo@gmail.com>
-    Subject: Progreso al {fecha} (aviso automatizado).
-    Content-Type: text/html
+To: Emilio <emo.bravo@gmail.com>
+Subject: Progreso al {fecha} (aviso automatizado).
+Content-Type: text/html
 
-    <html><style>{css}</style>{avance}</html>'''
+<html><style>{css}</style>{avance}</html>'''
 
 
     with open("progress_mail.txt", "w") as text_file:
