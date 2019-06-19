@@ -6,6 +6,8 @@ import sys
 from pyvirtualdisplay import Display
 import datetime
 
+os.chdir(os.path.dirname(os.path.realpath(__file__)))
+
 
 def browser(func):
     def browser_wrapper(*args, **kwargs):
@@ -62,7 +64,7 @@ def main():
 
     html = f'''From: Servidor SENDA <quimera.server@gmail.com>
 To: Emilio <emo.bravo@gmail.com>
-Subject: Progreso al {fecha} (aviso automatizado).
+Subject: Progreso al {fecha} (aviso automatizado)
 Content-Type: text/html
 
 <html><style>{css}</style>{avance}</html>'''
