@@ -1,0 +1,2264 @@
+From: Servidor SENDA <quimera.server@gmail.com>
+To: Emilio <emo.bravo@gmail.com>
+Subject: Progreso al 20/06 (aviso automatizado)
+Content-Type: text/html
+
+<html><style>a{background-color:transparent;-webkit-text-decoration-skip:objects;}
+a:active,a:hover{outline-width:0;}
+@media print{
+*,::after,::before,div::first-letter,div::first-line,li::first-letter,li::first-line{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+a,a:visited{text-decoration:underline;}
+h3{orphans:3;widows:3;}
+h3{page-break-after:avoid;}
+}
+*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit;}
+h3,h4{margin-top:0;margin-bottom:.5rem;}
+ol{margin-top:0;margin-bottom:1rem;}
+a{color:#0275d8;text-decoration:none;}
+a:focus,a:hover{color:#014c8c;text-decoration:underline;}
+a,label{-ms-touch-action:manipulation;touch-action:manipulation;}
+label{display:inline-block;margin-bottom:.5rem;}
+h3,h4{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.1;color:inherit;}
+h3{font-size:1.75rem;}
+h4{font-size:1.5rem;}
+.container{position:relative;margin-left:auto;margin-right:auto;padding-right:15px;padding-left:15px;}
+@media (min-width:576px){
+.container{padding-right:15px;padding-left:15px;}
+}
+@media (min-width:768px){
+.container{padding-right:15px;padding-left:15px;}
+}
+@media (min-width:992px){
+.container{padding-right:15px;padding-left:15px;}
+}
+@media (min-width:1200px){
+.container{padding-right:15px;padding-left:15px;}
+}
+@media (min-width:576px){
+.container{width:540px;max-width:100%;}
+}
+@media (min-width:768px){
+.container{width:720px;max-width:100%;}
+}
+@media (min-width:992px){
+.container{width:960px;max-width:100%;}
+}
+@media (min-width:1200px){
+.container{width:1140px;max-width:100%;}
+}
+.container-fluid{position:relative;margin-left:auto;margin-right:auto;padding-right:15px;padding-left:15px;}
+@media (min-width:576px){
+.container-fluid{padding-right:15px;padding-left:15px;}
+}
+@media (min-width:768px){
+.container-fluid{padding-right:15px;padding-left:15px;}
+}
+@media (min-width:992px){
+.container-fluid{padding-right:15px;padding-left:15px;}
+}
+@media (min-width:1200px){
+.container-fluid{padding-right:15px;padding-left:15px;}
+}
+.row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+@media (min-width:576px){
+.row{margin-right:-15px;margin-left:-15px;}
+}
+@media (min-width:768px){
+.row{margin-right:-15px;margin-left:-15px;}
+}
+@media (min-width:992px){
+.row{margin-right:-15px;margin-left:-15px;}
+}
+@media (min-width:1200px){
+.row{margin-right:-15px;margin-left:-15px;}
+}
+.col,.col-12,.col-8,.col-md-4,.col-md-6,.col-md-8{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width:576px){
+.col,.col-12,.col-8,.col-md-4,.col-md-6,.col-md-8{padding-right:15px;padding-left:15px;}
+}
+@media (min-width:768px){
+.col,.col-12,.col-8,.col-md-4,.col-md-6,.col-md-8{padding-right:15px;padding-left:15px;}
+}
+@media (min-width:992px){
+.col,.col-12,.col-8,.col-md-4,.col-md-6,.col-md-8{padding-right:15px;padding-left:15px;}
+}
+@media (min-width:1200px){
+.col,.col-12,.col-8,.col-md-4,.col-md-6,.col-md-8{padding-right:15px;padding-left:15px;}
+}
+.col{-webkit-flex-basis:0;-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;max-width:100%;}
+.col-8{-webkit-box-flex:0;-webkit-flex:0 0 66.666667%;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}
+.col-12{-webkit-box-flex:0;-webkit-flex:0 0 100%;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}
+@media (min-width:768px){
+.col-md-4{-webkit-box-flex:0;-webkit-flex:0 0 33.333333%;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}
+.col-md-6{-webkit-box-flex:0;-webkit-flex:0 0 50%;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
+.col-md-8{-webkit-box-flex:0;-webkit-flex:0 0 66.666667%;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}
+}
+.card{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;background-color:#fff;border:1px solid rgba(0, 0, 0, .125);border-radius:.25rem;}
+.card-block{-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;padding:1.25rem;}
+.breadcrumb{padding:.75rem 1rem;margin-bottom:1rem;list-style:none;background-color:#eceeef;border-radius:.25rem;}
+.breadcrumb::after{display:block;content:"";clear:both;}
+.breadcrumb-item{float:left;}
+.breadcrumb-item+.breadcrumb-item::before{display:inline-block;padding-right:.5rem;padding-left:.5rem;color:#636c72;content:"/";}
+.breadcrumb-item+.breadcrumb-item:hover::before{text-decoration:underline;}
+.breadcrumb-item+.breadcrumb-item:hover::before{text-decoration:none;}
+.breadcrumb-item.active{color:#636c72;}
+.progress{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;overflow:hidden;font-size:.75rem;line-height:1rem;text-align:center;background-color:#eceeef;border-radius:.25rem;}
+.progress-bar{height:1rem;color:#fff;background-color:#0275d8;}
+.bg-danger{background-color:#d9534f!important;}
+.align-self-center{-webkit-align-self:center!important;-ms-flex-item-align:center!important;-ms-grid-row-align:center!important;align-self:center!important;}
+/*! CSS Used from: http://159.89.134.14/static/css/style.css */
+/*! @import http://159.89.134.14/static/scss/icons/font-awesome/css/font-awesome.min.css */
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.fa-home:before{content:"\f015";}
+.fa-external-link:before{content:"\f08e";}
+.fa-group:before{content:"\f0c0";}
+.fa-table:before{content:"\f0ce";}
+.fa-suitcase:before{content:"\f0f2";}
+.fa-angle-down:before{content:"\f107";}
+.fa-usd:before{content:"\f155";}
+.fa-car:before{content:"\f1b9";}
+.fa-user-circle-o:before{content:"\f2be";}
+/*! end @import */
+*{outline:none!important;}
+a:focus,a:hover{text-decoration:none;}
+h3,h4{color:#2c2b2e;font-family:"Rubik", sans-serif;font-weight:400;}
+h3{line-height:30px;font-size:21px;}
+h4{line-height:22px;font-size:18px;}
+ol li{margin:5px 0;}
+.m-l-10{margin-left:10px!important;}
+.m-r-10{margin-right:10px!important;}
+.m-t-0{margin-top:0px!important;}
+.m-t-15{margin-top:15px!important;}
+.m-b-0{margin-bottom:0px!important;}
+.m-b-15{margin-bottom:15px!important;}
+.bg-danger{background-color:#f62d51!important;}
+.text-themecolor{color:#009efb!important;}
+.card-no-border .card{border:0px;}
+.container-fluid{padding:25px 30px;}
+.page-titles .breadcrumb{padding:0px;background:transparent;}
+.page-titles .breadcrumb .breadcrumb-item+.breadcrumb-item:before{content:"\e649";font-family:themify;color:#a6b7bf;font-size:14px;}
+.page-titles{padding-bottom:20px;}
+.card{margin-bottom:30px;}
+.breadcrumb{margin-bottom:0px;}
+/*! CSS Used from: http://159.89.134.14/static/css/colors/red.css */
+a{color:#f62d51;}
+.text-themecolor{color:#f62d51!important;}
+/*! CSS Used fontfaces */
+@font-face{font-family:'FontAwesome';src:url('http://159.89.134.14/static/scss/icons/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0');src:url('http://159.89.134.14/static/scss/icons/font-awesome/fonts/fontawesome-webfont.eot#iefix&v=4.7.0') format('embedded-opentype'), url('http://159.89.134.14/static/scss/icons/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('http://159.89.134.14/static/scss/icons/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('http://159.89.134.14/static/scss/icons/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('http://159.89.134.14/static/scss/icons/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:300;src:local('Rubik Light'), local('Rubik-Light'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7Fqj2mZ8WD07oB-98o.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:300;src:local('Rubik Light'), local('Rubik-Light'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7Fqj2mf8WD07oB-98o.woff2) format('woff2');unicode-range:U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:300;src:local('Rubik Light'), local('Rubik-Light'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7Fqj2mT8WD07oB-98o.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:300;src:local('Rubik Light'), local('Rubik-Light'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7Fqj2md8WD07oB-.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:400;src:local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v8/iJWKBXyIfDnIV7nFrXyw023e1Ik.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:400;src:local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v8/iJWKBXyIfDnIV7nDrXyw023e1Ik.woff2) format('woff2');unicode-range:U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:400;src:local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v8/iJWKBXyIfDnIV7nPrXyw023e1Ik.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:400;src:local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v8/iJWKBXyIfDnIV7nBrXyw023e.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:500;src:local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7EyjmmZ8WD07oB-98o.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:500;src:local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7Eyjmmf8WD07oB-98o.woff2) format('woff2');unicode-range:U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:500;src:local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7EyjmmT8WD07oB-98o.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:500;src:local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7Eyjmmd8WD07oB-.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:700;src:local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7F6iGmZ8WD07oB-98o.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:700;src:local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7F6iGmf8WD07oB-98o.woff2) format('woff2');unicode-range:U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:700;src:local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7F6iGmT8WD07oB-98o.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:700;src:local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7F6iGmd8WD07oB-.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:900;src:local('Rubik Black'), local('Rubik-Black'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7FCimmZ8WD07oB-98o.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:900;src:local('Rubik Black'), local('Rubik-Black'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7FCimmf8WD07oB-98o.woff2) format('woff2');unicode-range:U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:900;src:local('Rubik Black'), local('Rubik-Black'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7FCimmT8WD07oB-98o.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:900;src:local('Rubik Black'), local('Rubik-Black'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7FCimmd8WD07oB-.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:300;src:local('Rubik Light'), local('Rubik-Light'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7Fqj2mZ8WD07oB-98o.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:300;src:local('Rubik Light'), local('Rubik-Light'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7Fqj2mf8WD07oB-98o.woff2) format('woff2');unicode-range:U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:300;src:local('Rubik Light'), local('Rubik-Light'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7Fqj2mT8WD07oB-98o.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:300;src:local('Rubik Light'), local('Rubik-Light'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7Fqj2md8WD07oB-.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:400;src:local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v8/iJWKBXyIfDnIV7nFrXyw023e1Ik.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:400;src:local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v8/iJWKBXyIfDnIV7nDrXyw023e1Ik.woff2) format('woff2');unicode-range:U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:400;src:local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v8/iJWKBXyIfDnIV7nPrXyw023e1Ik.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:400;src:local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v8/iJWKBXyIfDnIV7nBrXyw023e.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:500;src:local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7EyjmmZ8WD07oB-98o.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:500;src:local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7Eyjmmf8WD07oB-98o.woff2) format('woff2');unicode-range:U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:500;src:local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7EyjmmT8WD07oB-98o.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:500;src:local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7Eyjmmd8WD07oB-.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:700;src:local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7F6iGmZ8WD07oB-98o.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:700;src:local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7F6iGmf8WD07oB-98o.woff2) format('woff2');unicode-range:U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:700;src:local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7F6iGmT8WD07oB-98o.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:700;src:local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7F6iGmd8WD07oB-.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:900;src:local('Rubik Black'), local('Rubik-Black'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7FCimmZ8WD07oB-98o.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:900;src:local('Rubik Black'), local('Rubik-Black'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7FCimmf8WD07oB-98o.woff2) format('woff2');unicode-range:U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:900;src:local('Rubik Black'), local('Rubik-Black'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7FCimmT8WD07oB-98o.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:900;src:local('Rubik Black'), local('Rubik-Black'), url(https://fonts.gstatic.com/s/rubik/v8/iJWHBXyIfDnIV7FCimmd8WD07oB-.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'themify';src:url('http://159.89.134.14/static/scss/icons/themify-icons/fonts/themify.eot?-fvbane');src:url('http://159.89.134.14/static/scss/icons/themify-icons/fonts/themify.eot#iefix-fvbane') format('embedded-opentype'),  		url('http://159.89.134.14/static/scss/icons/themify-icons/fonts/themify.woff') format('woff'),  		url('http://159.89.134.14/static/scss/icons/themify-icons/fonts/themify.ttf') format('truetype'),  		url('http://159.89.134.14/static/scss/icons/themify-icons/fonts/themify.svg?-fvbane#themify') format('svg');font-weight:normal;font-style:normal;}</style><div class="container-fluid">
+ <div class="row page-titles">
+  <div class="col-md-6 col-8 align-self-center">
+   <h3 class="text-themecolor m-b-0 m-t-0">
+    Avance al 20/06 <a href="http://159.89.134.14/ias-uchile/avance">(ver detalle)</a>
+   </h3>
+   <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+     <a href="/ias-uchile">
+      Home
+     </a>
+    </li>
+    <li class="breadcrumb-item active">
+     Avance al 20/06 <a href="http://159.89.134.14/ias-uchile/avance">(ver detalle)</a>
+    </li>
+   </ol>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-12">
+   <div class="card" style="margin-bottom: 15px;">
+    <div class="card-block">
+     <h4>
+      Municipalidad de Melipilla
+      <a href="http://159.89.134.14/input/MELIPILLA" target="_blank">
+       <i aria-hidden="true" class="fa fa-external-link m-l-10">
+       </i>
+      </a>
+      <a class="m-r-10" href="#" id="show0" style="float: right;">
+       <i aria-hidden="true" class="fa fa-angle-down m-r-10" id="details-icon0" style="display:none;">
+       </i>
+       
+      </a>
+     </h4>
+     <div class="row">
+      <div class="col  ">
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="41" class="progress-bar bg-danger" id="MELIPILLA" role="progressbar" style="width: 41%;">
+         <span style="color:#eceeef;">
+          41%
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container" id="showcontainer0" style="display: none;">
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa fa-user-circle-o m-r-10">
+         </i>
+         Personal
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_0BdESj8KbnC9McB?Q_DL=9ttyZfZEm8Eq2Y5_0BdESj8KbnC9McB_MLRP_0BPEXO25WWK1ksl&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar" id="MELIPILLAPersonal" role="progressbar" style="width: 100%;">
+          <span style="color:#eceeef;">
+           100%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-group m-r-10">
+         </i>
+         Usuarios
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_cVmHhUK0AaIp1Fr?Q_DL=aWBrNR0qQYd4VzT_cVmHhUK0AaIp1Fr_MLRP_6DxKFEzcCJQ2ZEh&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="21" class="progress-bar" id="MELIPILLAUsuarios" role="progressbar" style="width: 21%;">
+          <span style="color:#eceeef;">
+           21%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-home m-r-10">
+         </i>
+         Vivienda
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_bdcYJZJWgqXLyu1?Q_DL=6h6nYZh1NmOKinX_bdcYJZJWgqXLyu1_MLRP_diOwqIlhKtm474h&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar" id="MELIPILLAVivienda" role="progressbar" style="width: 100%;">
+          <span style="color:#eceeef;">
+           100%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-suitcase m-r-10">
+         </i>
+         Mobiliario
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_2lT5yEHtwMOUa7b?Q_DL=dcD3aLrbQt2K5tr_2lT5yEHtwMOUa7b_MLRP_5b7XXMsblzw2rJz&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="63" class="progress-bar" id="MELIPILLAMobiliario" role="progressbar" style="width: 63%;">
+          <span style="color:#eceeef;">
+           63%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-usd m-r-10">
+         </i>
+         Gastos Básicos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_eXwRI7Hg5ajWwkd?Q_DL=8BpqnkZcimGlWcZ_eXwRI7Hg5ajWwkd_MLRP_9mKEQP7OuyiRUln&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="MELIPILLAGastosBásicos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-car m-r-10">
+         </i>
+         Otros Gastos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_8lfwt1KiGnBNhFH?Q_DL=d4DYaZ49K7NmYGF_8lfwt1KiGnBNhFH_MLRP_23KYTKr72pOtfPn&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="MELIPILLAOtrosGastos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-table m-r-10">
+         </i>
+         Costos Indirectos
+         <a href="https://docs.google.com/spreadsheets/d/1CK3FhlTXWJdRP-yBOH5DqnEjovvy9Nk71GOVpj_Q_MQ/edit?rm=minimal#gid=0" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="MELIPILLACostosIndirectos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-12">
+   <div class="card" style="margin-bottom: 15px;">
+    <div class="card-block">
+     <h4>
+      Semillas de Cambio
+      <a href="http://159.89.134.14/input/SEMILLAS" target="_blank">
+       <i aria-hidden="true" class="fa fa-external-link m-l-10">
+       </i>
+      </a>
+      <a class="m-r-10" href="#" id="show1" style="float: right;">
+       <i aria-hidden="true" class="fa fa-angle-down m-r-10" id="details-icon1" style="display:none;">
+       </i>
+       
+      </a>
+     </h4>
+     <div class="row">
+      <div class="col  ">
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="32" class="progress-bar bg-danger" id="SEMILLAS" role="progressbar" style="width: 32%;">
+         <span style="color:#eceeef;">
+          32%
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container" id="showcontainer1" style="display: none;">
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa fa-user-circle-o m-r-10">
+         </i>
+         Personal
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_0BdESj8KbnC9McB?Q_DL=9ttyZfZEm8Eq2Y5_0BdESj8KbnC9McB_MLRP_41SbugKONXuPWE5&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="SEMILLASPersonal" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-group m-r-10">
+         </i>
+         Usuarios
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_cVmHhUK0AaIp1Fr?Q_DL=aWBrNR0qQYd4VzT_cVmHhUK0AaIp1Fr_MLRP_8vN86Pl72j82ORn&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="SEMILLASUsuarios" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-home m-r-10">
+         </i>
+         Vivienda
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_bdcYJZJWgqXLyu1?Q_DL=6h6nYZh1NmOKinX_bdcYJZJWgqXLyu1_MLRP_dp66uroZ7KyxofH&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="92" class="progress-bar" id="SEMILLASVivienda" role="progressbar" style="width: 92%;">
+          <span style="color:#eceeef;">
+           92%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-suitcase m-r-10">
+         </i>
+         Mobiliario
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_2lT5yEHtwMOUa7b?Q_DL=dcD3aLrbQt2K5tr_2lT5yEHtwMOUa7b_MLRP_bfnrM6D3uxtmfHv&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="38" class="progress-bar" id="SEMILLASMobiliario" role="progressbar" style="width: 38%;">
+          <span style="color:#eceeef;">
+           38%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-usd m-r-10">
+         </i>
+         Gastos Básicos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_eXwRI7Hg5ajWwkd?Q_DL=8BpqnkZcimGlWcZ_eXwRI7Hg5ajWwkd_MLRP_8AqcB2ibbG1rQA5&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="SEMILLASGastosBásicos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-car m-r-10">
+         </i>
+         Otros Gastos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_8lfwt1KiGnBNhFH?Q_DL=d4DYaZ49K7NmYGF_8lfwt1KiGnBNhFH_MLRP_8kvMgB2Oty4aTVH&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="91" class="progress-bar" id="SEMILLASOtrosGastos" role="progressbar" style="width: 91%;">
+          <span style="color:#eceeef;">
+           91%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-table m-r-10">
+         </i>
+         Costos Indirectos
+         <a href="https://docs.google.com/spreadsheets/d/1vSxVNB4j9I-rjkDJwP6Q7AOvp35WKBuExvmlqcWZvsU/edit?rm=minimal#gid=0" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="2" class="progress-bar" id="SEMILLASCostosIndirectos" role="progressbar" style="width: 2%;">
+          <span style="color:#eceeef;">
+           2%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-12">
+   <div class="card" style="margin-bottom: 15px;">
+    <div class="card-block">
+     <h4>
+      Coporación Tiempo de Esperanza
+      <a href="http://159.89.134.14/input/ESPERANZA" target="_blank">
+       <i aria-hidden="true" class="fa fa-external-link m-l-10">
+       </i>
+      </a>
+      <a class="m-r-10" href="#" id="show2" style="float: right;">
+       <i aria-hidden="true" class="fa fa-angle-down m-r-10" id="details-icon2" style="display:none;">
+       </i>
+       
+      </a>
+     </h4>
+     <div class="row">
+      <div class="col  ">
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar bg-danger" id="ESPERANZA" role="progressbar" style="width: 0%;">
+         <span style="color:#eceeef;">
+          0%
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container" id="showcontainer2" style="display: none;">
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa fa-user-circle-o m-r-10">
+         </i>
+         Personal
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_0BdESj8KbnC9McB?Q_DL=9ttyZfZEm8Eq2Y5_0BdESj8KbnC9McB_MLRP_0NCYiwHUAeS4WdT&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="ESPERANZAPersonal" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-group m-r-10">
+         </i>
+         Usuarios
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_cVmHhUK0AaIp1Fr?Q_DL=aWBrNR0qQYd4VzT_cVmHhUK0AaIp1Fr_MLRP_0NA1t3S71Pom0Yd&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="ESPERANZAUsuarios" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-home m-r-10">
+         </i>
+         Vivienda
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_bdcYJZJWgqXLyu1?Q_DL=6h6nYZh1NmOKinX_bdcYJZJWgqXLyu1_MLRP_3sjUhbylchkCQqV&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="ESPERANZAVivienda" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-suitcase m-r-10">
+         </i>
+         Mobiliario
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_2lT5yEHtwMOUa7b?Q_DL=dcD3aLrbQt2K5tr_2lT5yEHtwMOUa7b_MLRP_56WxggRZeJY1OER&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="ESPERANZAMobiliario" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-usd m-r-10">
+         </i>
+         Gastos Básicos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_eXwRI7Hg5ajWwkd?Q_DL=8BpqnkZcimGlWcZ_eXwRI7Hg5ajWwkd_MLRP_a2ELjw0JcqtK0xD&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="ESPERANZAGastosBásicos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-car m-r-10">
+         </i>
+         Otros Gastos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_8lfwt1KiGnBNhFH?Q_DL=d4DYaZ49K7NmYGF_8lfwt1KiGnBNhFH_MLRP_equf8GSCunIUXC5&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="ESPERANZAOtrosGastos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-table m-r-10">
+         </i>
+         Costos Indirectos
+         <a href="https://docs.google.com/spreadsheets/d/1fL1HO7ijI7Nj2h6kYgGU1M3RDcMTyiprME2XkmtY98Q/edit?rm=minimal#gid=0" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="ESPERANZACostosIndirectos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-12">
+   <div class="card" style="margin-bottom: 15px;">
+    <div class="card-block">
+     <h4>
+      Cristo Obrero
+      <a href="http://159.89.134.14/input/OBRERO" target="_blank">
+       <i aria-hidden="true" class="fa fa-external-link m-l-10">
+       </i>
+      </a>
+      <a class="m-r-10" href="#" id="show3" style="float: right;">
+       <i aria-hidden="true" class="fa fa-angle-down m-r-10" id="details-icon3" style="display:none;">
+       </i>
+       
+      </a>
+     </h4>
+     <div class="row">
+      <div class="col  ">
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar bg-danger" id="OBRERO" role="progressbar" style="width: 0%;">
+         <span style="color:#eceeef;">
+          0%
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container" id="showcontainer3" style="display: none;">
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa fa-user-circle-o m-r-10">
+         </i>
+         Personal
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_0BdESj8KbnC9McB?Q_DL=9ttyZfZEm8Eq2Y5_0BdESj8KbnC9McB_MLRP_23Jd30tJBsQQ9Ip&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OBREROPersonal" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-group m-r-10">
+         </i>
+         Usuarios
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_cVmHhUK0AaIp1Fr?Q_DL=aWBrNR0qQYd4VzT_cVmHhUK0AaIp1Fr_MLRP_bluWjipujOnWYQt&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OBREROUsuarios" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-home m-r-10">
+         </i>
+         Vivienda
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_bdcYJZJWgqXLyu1?Q_DL=6h6nYZh1NmOKinX_bdcYJZJWgqXLyu1_MLRP_efmV7PIwMoHUiTX&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OBREROVivienda" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-suitcase m-r-10">
+         </i>
+         Mobiliario
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_2lT5yEHtwMOUa7b?Q_DL=dcD3aLrbQt2K5tr_2lT5yEHtwMOUa7b_MLRP_d6iL9fRfsNaN8ln&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OBREROMobiliario" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-usd m-r-10">
+         </i>
+         Gastos Básicos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_eXwRI7Hg5ajWwkd?Q_DL=8BpqnkZcimGlWcZ_eXwRI7Hg5ajWwkd_MLRP_cHeMjtIQpnUYNsV&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OBREROGastosBásicos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-car m-r-10">
+         </i>
+         Otros Gastos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_8lfwt1KiGnBNhFH?Q_DL=d4DYaZ49K7NmYGF_8lfwt1KiGnBNhFH_MLRP_79fCFAAbrTE3A5T&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OBREROOtrosGastos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-table m-r-10">
+         </i>
+         Costos Indirectos
+         <a href="https://docs.google.com/spreadsheets/d/1fL1HO7ijI7Nj2h6kYgGU1M3RDcMTyiprME2XkmtY98Q/edit?rm=minimal#gid=0" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OBREROCostosIndirectos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-12">
+   <div class="card" style="margin-bottom: 15px;">
+    <div class="card-block">
+     <h4>
+      Municipalidad de Chiguayante
+      <a href="http://159.89.134.14/input/CHIGUAYANTE" target="_blank">
+       <i aria-hidden="true" class="fa fa-external-link m-l-10">
+       </i>
+      </a>
+      <a class="m-r-10" href="#" id="show4" style="float: right;">
+       <i aria-hidden="true" class="fa fa-angle-down m-r-10" id="details-icon4" style="display:none;">
+       </i>
+       
+      </a>
+     </h4>
+     <div class="row">
+      <div class="col  ">
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar bg-danger" id="CHIGUAYANTE" role="progressbar" style="width: 0%;">
+         <span style="color:#eceeef;">
+          0%
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container" id="showcontainer4" style="display: none;">
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa fa-user-circle-o m-r-10">
+         </i>
+         Personal
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_0BdESj8KbnC9McB?Q_DL=9ttyZfZEm8Eq2Y5_0BdESj8KbnC9McB_MLRP_6sWTS4lzef15nql&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="CHIGUAYANTEPersonal" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-group m-r-10">
+         </i>
+         Usuarios
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_cVmHhUK0AaIp1Fr?Q_DL=aWBrNR0qQYd4VzT_cVmHhUK0AaIp1Fr_MLRP_cIOO4VB0bdyZdSB&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="CHIGUAYANTEUsuarios" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-home m-r-10">
+         </i>
+         Vivienda
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_bdcYJZJWgqXLyu1?Q_DL=6h6nYZh1NmOKinX_bdcYJZJWgqXLyu1_MLRP_e5aBtkC15fQo8y9&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="CHIGUAYANTEVivienda" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-suitcase m-r-10">
+         </i>
+         Mobiliario
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_2lT5yEHtwMOUa7b?Q_DL=dcD3aLrbQt2K5tr_2lT5yEHtwMOUa7b_MLRP_6ybKFPzu0sxYQy9&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="CHIGUAYANTEMobiliario" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-usd m-r-10">
+         </i>
+         Gastos Básicos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_eXwRI7Hg5ajWwkd?Q_DL=8BpqnkZcimGlWcZ_eXwRI7Hg5ajWwkd_MLRP_5jM9w2oWJvIKtYp&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="CHIGUAYANTEGastosBásicos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-car m-r-10">
+         </i>
+         Otros Gastos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_8lfwt1KiGnBNhFH?Q_DL=d4DYaZ49K7NmYGF_8lfwt1KiGnBNhFH_MLRP_6r3IAH3gtojai5D&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="CHIGUAYANTEOtrosGastos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-table m-r-10">
+         </i>
+         Costos Indirectos
+         <a href="https://docs.google.com/spreadsheets/d/1fL1HO7ijI7Nj2h6kYgGU1M3RDcMTyiprME2XkmtY98Q/edit?rm=minimal#gid=0" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="CHIGUAYANTECostosIndirectos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-12">
+   <div class="card" style="margin-bottom: 15px;">
+    <div class="card-block">
+     <h4>
+      ONG Simbiosis
+      <a href="http://159.89.134.14/input/SIMBIOSIS" target="_blank">
+       <i aria-hidden="true" class="fa fa-external-link m-l-10">
+       </i>
+      </a>
+      <a class="m-r-10" href="#" id="show5" style="float: right;">
+       <i aria-hidden="true" class="fa fa-angle-down m-r-10" id="details-icon5" style="display:none;">
+       </i>
+       
+      </a>
+     </h4>
+     <div class="row">
+      <div class="col  ">
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar bg-danger" id="SIMBIOSIS" role="progressbar" style="width: 0%;">
+         <span style="color:#eceeef;">
+          0%
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container" id="showcontainer5" style="display: none;">
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa fa-user-circle-o m-r-10">
+         </i>
+         Personal
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_0BdESj8KbnC9McB?Q_DL=9ttyZfZEm8Eq2Y5_0BdESj8KbnC9McB_MLRP_erhBfHdF9pfiCSp&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="SIMBIOSISPersonal" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-group m-r-10">
+         </i>
+         Usuarios
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_cVmHhUK0AaIp1Fr?Q_DL=aWBrNR0qQYd4VzT_cVmHhUK0AaIp1Fr_MLRP_1U3nTvYoRYvx941&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="SIMBIOSISUsuarios" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-home m-r-10">
+         </i>
+         Vivienda
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_bdcYJZJWgqXLyu1?Q_DL=6h6nYZh1NmOKinX_bdcYJZJWgqXLyu1_MLRP_eRQcGWDgbDYL0eV&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="SIMBIOSISVivienda" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-suitcase m-r-10">
+         </i>
+         Mobiliario
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_2lT5yEHtwMOUa7b?Q_DL=dcD3aLrbQt2K5tr_2lT5yEHtwMOUa7b_MLRP_a3kXw2MzWtuG7rL&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="SIMBIOSISMobiliario" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-usd m-r-10">
+         </i>
+         Gastos Básicos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_eXwRI7Hg5ajWwkd?Q_DL=8BpqnkZcimGlWcZ_eXwRI7Hg5ajWwkd_MLRP_8GhfiT98MLaIu3P&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="SIMBIOSISGastosBásicos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-car m-r-10">
+         </i>
+         Otros Gastos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_8lfwt1KiGnBNhFH?Q_DL=d4DYaZ49K7NmYGF_8lfwt1KiGnBNhFH_MLRP_egPackP2f6E3MYl&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="SIMBIOSISOtrosGastos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-table m-r-10">
+         </i>
+         Costos Indirectos
+         <a href="https://docs.google.com/spreadsheets/d/1fL1HO7ijI7Nj2h6kYgGU1M3RDcMTyiprME2XkmtY98Q/edit?rm=minimal#gid=0" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="SIMBIOSISCostosIndirectos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-12">
+   <div class="card" style="margin-bottom: 15px;">
+    <div class="card-block">
+     <h4>
+      OSL Tarapacá
+      <a href="http://159.89.134.14/input/OSLTARAPACA" target="_blank">
+       <i aria-hidden="true" class="fa fa-external-link m-l-10">
+       </i>
+      </a>
+      <a class="m-r-10" href="#" id="show6" style="float: right;">
+       <i aria-hidden="true" class="fa fa-angle-down m-r-10" id="details-icon6" style="display:none;">
+       </i>
+       
+      </a>
+     </h4>
+     <div class="row">
+      <div class="col  ">
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar bg-danger" id="OSLTARAPACA" role="progressbar" style="width: 0%;">
+         <span style="color:#eceeef;">
+          0%
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container" id="showcontainer6" style="display: none;">
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa fa-user-circle-o m-r-10">
+         </i>
+         Personal
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_0BdESj8KbnC9McB?Q_DL=9ttyZfZEm8Eq2Y5_0BdESj8KbnC9McB_MLRP_cGAr1bJxzcvTTZH&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLTARAPACAPersonal" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-group m-r-10">
+         </i>
+         Usuarios
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_5w1nZPa6VvlIWDr?Q_DL=bxCYxARQ0bUaOWx_5w1nZPa6VvlIWDr_MLRP_1BT25Oq6c1DNX0h&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLTARAPACAUsuarios" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-home m-r-10">
+         </i>
+         Oficina
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_bdcYJZJWgqXLyu1?Q_DL=6h6nYZh1NmOKinX_bdcYJZJWgqXLyu1_MLRP_1Ck9mmnauYIvZt3&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLTARAPACAOficina" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-suitcase m-r-10">
+         </i>
+         Mobiliario
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_3K66qmiWa5V4XLD?Q_DL=4JHyQzlmdYS5P01_3K66qmiWa5V4XLD_MLRP_efFwqqunfgRctlb&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLTARAPACAMobiliario" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-usd m-r-10">
+         </i>
+         Gastos Básicos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_eXwRI7Hg5ajWwkd?Q_DL=8BpqnkZcimGlWcZ_eXwRI7Hg5ajWwkd_MLRP_9yLozSBFVXn7ZGd&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLTARAPACAGastosBásicos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-car m-r-10">
+         </i>
+         Otros Gastos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_8lfwt1KiGnBNhFH?Q_DL=d4DYaZ49K7NmYGF_8lfwt1KiGnBNhFH_MLRP_57mSL7VWpJFyycR&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLTARAPACAOtrosGastos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-table m-r-10">
+         </i>
+         Costos Indirectos
+         <a href="https://docs.google.com/spreadsheets/d/1H0K_wasmPaZpKcHitytDkZukxDNP07AsMuMb69YDiHc//edit?rm=minimal#gid=0" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLTARAPACACostosIndirectos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-12">
+   <div class="card" style="margin-bottom: 15px;">
+    <div class="card-block">
+     <h4>
+      OSL Valparaíso
+      <a href="http://159.89.134.14/input/OSLVALPO" target="_blank">
+       <i aria-hidden="true" class="fa fa-external-link m-l-10">
+       </i>
+      </a>
+      <a class="m-r-10" href="#" id="show7" style="float: right;">
+       <i aria-hidden="true" class="fa fa-angle-down m-r-10" id="details-icon7" style="display:none;">
+       </i>
+       
+      </a>
+     </h4>
+     <div class="row">
+      <div class="col  ">
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar bg-danger" id="OSLVALPO" role="progressbar" style="width: 0%;">
+         <span style="color:#eceeef;">
+          0%
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container" id="showcontainer7" style="display: none;">
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa fa-user-circle-o m-r-10">
+         </i>
+         Personal
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_0BdESj8KbnC9McB?Q_DL=9ttyZfZEm8Eq2Y5_0BdESj8KbnC9McB_MLRP_0quTdzyIHyoyBSJ&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLVALPOPersonal" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-group m-r-10">
+         </i>
+         Usuarios
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_5w1nZPa6VvlIWDr?Q_DL=bxCYxARQ0bUaOWx_5w1nZPa6VvlIWDr_MLRP_2sqo0JqavBO0fCl&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLVALPOUsuarios" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-home m-r-10">
+         </i>
+         Oficina
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_bdcYJZJWgqXLyu1?Q_DL=6h6nYZh1NmOKinX_bdcYJZJWgqXLyu1_MLRP_42ufhpyv78N8j9X&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLVALPOOficina" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-suitcase m-r-10">
+         </i>
+         Mobiliario
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_3K66qmiWa5V4XLD?Q_DL=4JHyQzlmdYS5P01_3K66qmiWa5V4XLD_MLRP_3pAp76joIWaPyXH&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLVALPOMobiliario" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-usd m-r-10">
+         </i>
+         Gastos Básicos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_eXwRI7Hg5ajWwkd?Q_DL=8BpqnkZcimGlWcZ_eXwRI7Hg5ajWwkd_MLRP_2gIynP47rmG8krb&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLVALPOGastosBásicos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-car m-r-10">
+         </i>
+         Otros Gastos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_8lfwt1KiGnBNhFH?Q_DL=d4DYaZ49K7NmYGF_8lfwt1KiGnBNhFH_MLRP_bmHpnokNODXEE6x&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLVALPOOtrosGastos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-table m-r-10">
+         </i>
+         Costos Indirectos
+         <a href="https://docs.google.com/spreadsheets/d/1H0K_wasmPaZpKcHitytDkZukxDNP07AsMuMb69YDiHc//edit?rm=minimal#gid=0" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLVALPOCostosIndirectos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-12">
+   <div class="card" style="margin-bottom: 15px;">
+    <div class="card-block">
+     <h4>
+      OSL Metropolitana
+      <a href="http://159.89.134.14/input/OSL" target="_blank">
+       <i aria-hidden="true" class="fa fa-external-link m-l-10">
+       </i>
+      </a>
+      <a class="m-r-10" href="#" id="show8" style="float: right;">
+       <i aria-hidden="true" class="fa fa-angle-down m-r-10" id="details-icon8" style="display:none;">
+       </i>
+       
+      </a>
+     </h4>
+     <div class="row">
+      <div class="col  ">
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="36" class="progress-bar bg-danger" id="OSL" role="progressbar" style="width: 36%;">
+         <span style="color:#eceeef;">
+          36%
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container" id="showcontainer8" style="display: none;">
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa fa-user-circle-o m-r-10">
+         </i>
+         Personal
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_0BdESj8KbnC9McB?Q_DL=9ttyZfZEm8Eq2Y5_0BdESj8KbnC9McB_MLRP_ebP5rNb1VH4HtJz&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="9" class="progress-bar" id="OSLPersonal" role="progressbar" style="width: 9%;">
+          <span style="color:#eceeef;">
+           9%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-group m-r-10">
+         </i>
+         Usuarios
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_5w1nZPa6VvlIWDr?Q_DL=bxCYxARQ0bUaOWx_5w1nZPa6VvlIWDr_MLRP_8qfngGMcTRuvBSl&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar" id="OSLUsuarios" role="progressbar" style="width: 50%;">
+          <span style="color:#eceeef;">
+           50%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-home m-r-10">
+         </i>
+         Oficina
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_bdcYJZJWgqXLyu1?Q_DL=6h6nYZh1NmOKinX_bdcYJZJWgqXLyu1_MLRP_9BoeX669fo9vabr&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="92" class="progress-bar" id="OSLOficina" role="progressbar" style="width: 92%;">
+          <span style="color:#eceeef;">
+           92%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-suitcase m-r-10">
+         </i>
+         Mobiliario
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_3K66qmiWa5V4XLD?Q_DL=4JHyQzlmdYS5P01_3K66qmiWa5V4XLD_MLRP_6fh9vlxBYEbEwT3&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="86" class="progress-bar" id="OSLMobiliario" role="progressbar" style="width: 86%;">
+          <span style="color:#eceeef;">
+           86%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-usd m-r-10">
+         </i>
+         Gastos Básicos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_eXwRI7Hg5ajWwkd?Q_DL=8BpqnkZcimGlWcZ_eXwRI7Hg5ajWwkd_MLRP_06U3rObzYfnr3qR&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="15" class="progress-bar" id="OSLGastosBásicos" role="progressbar" style="width: 15%;">
+          <span style="color:#eceeef;">
+           15%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-car m-r-10">
+         </i>
+         Otros Gastos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_8lfwt1KiGnBNhFH?Q_DL=d4DYaZ49K7NmYGF_8lfwt1KiGnBNhFH_MLRP_dakIG5tNvtgrDGR&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLOtrosGastos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-table m-r-10">
+         </i>
+         Costos Indirectos
+         <a href="https://docs.google.com/spreadsheets/d/1H0K_wasmPaZpKcHitytDkZukxDNP07AsMuMb69YDiHc//edit?rm=minimal#gid=0" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLCostosIndirectos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-12">
+   <div class="card" style="margin-bottom: 15px;">
+    <div class="card-block">
+     <h4>
+      OSL Bio Bio
+      <a href="http://159.89.134.14/input/OSLBIOBIO" target="_blank">
+       <i aria-hidden="true" class="fa fa-external-link m-l-10">
+       </i>
+      </a>
+      <a class="m-r-10" href="#" id="show9" style="float: right;">
+       <i aria-hidden="true" class="fa fa-angle-down m-r-10" id="details-icon9" style="display:none;">
+       </i>
+       
+      </a>
+     </h4>
+     <div class="row">
+      <div class="col  ">
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar bg-danger" id="OSLBIOBIO" role="progressbar" style="width: 0%;">
+         <span style="color:#eceeef;">
+          0%
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container" id="showcontainer9" style="display: none;">
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa fa-user-circle-o m-r-10">
+         </i>
+         Personal
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_0BdESj8KbnC9McB?Q_DL=9ttyZfZEm8Eq2Y5_0BdESj8KbnC9McB_MLRP_5j3vZAdtLojkWBn&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLBIOBIOPersonal" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-group m-r-10">
+         </i>
+         Usuarios
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_5w1nZPa6VvlIWDr?Q_DL=bxCYxARQ0bUaOWx_5w1nZPa6VvlIWDr_MLRP_eUKRkvYRZLocsm1&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLBIOBIOUsuarios" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-home m-r-10">
+         </i>
+         Oficina
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_bdcYJZJWgqXLyu1?Q_DL=6h6nYZh1NmOKinX_bdcYJZJWgqXLyu1_MLRP_cZr1ew7rkfYkH9H&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLBIOBIOOficina" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-suitcase m-r-10">
+         </i>
+         Mobiliario
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_3K66qmiWa5V4XLD?Q_DL=4JHyQzlmdYS5P01_3K66qmiWa5V4XLD_MLRP_0OhKd1J6o3GV5Kl&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLBIOBIOMobiliario" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-usd m-r-10">
+         </i>
+         Gastos Básicos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_eXwRI7Hg5ajWwkd?Q_DL=8BpqnkZcimGlWcZ_eXwRI7Hg5ajWwkd_MLRP_8zUdOByt8fYCnOt&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLBIOBIOGastosBásicos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-car m-r-10">
+         </i>
+         Otros Gastos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_8lfwt1KiGnBNhFH?Q_DL=d4DYaZ49K7NmYGF_8lfwt1KiGnBNhFH_MLRP_8ligmrgTRQ4r9Jj&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLBIOBIOOtrosGastos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-table m-r-10">
+         </i>
+         Costos Indirectos
+         <a href="https://docs.google.com/spreadsheets/d/1H0K_wasmPaZpKcHitytDkZukxDNP07AsMuMb69YDiHc//edit?rm=minimal#gid=0" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLBIOBIOCostosIndirectos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-12">
+   <div class="card" style="margin-bottom: 15px;">
+    <div class="card-block">
+     <h4>
+      OSL Los Ríos
+      <a href="http://159.89.134.14/input/OSLLOSRIOS" target="_blank">
+       <i aria-hidden="true" class="fa fa-external-link m-l-10">
+       </i>
+      </a>
+      <a class="m-r-10" href="#" id="show10" style="float: right;">
+       <i aria-hidden="true" class="fa fa-angle-down m-r-10" id="details-icon10" style="display:none;">
+       </i>
+       
+      </a>
+     </h4>
+     <div class="row">
+      <div class="col  ">
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar bg-danger" id="OSLLOSRIOS" role="progressbar" style="width: 0%;">
+         <span style="color:#eceeef;">
+          0%
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container" id="showcontainer10" style="display: none;">
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa fa-user-circle-o m-r-10">
+         </i>
+         Personal
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_0BdESj8KbnC9McB?Q_DL=9ttyZfZEm8Eq2Y5_0BdESj8KbnC9McB_MLRP_9FDaaSIcPfDbLFz&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLLOSRIOSPersonal" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-group m-r-10">
+         </i>
+         Usuarios
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_5w1nZPa6VvlIWDr?Q_DL=bxCYxARQ0bUaOWx_5w1nZPa6VvlIWDr_MLRP_elnKNSLFMpJh0cR&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLLOSRIOSUsuarios" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-home m-r-10">
+         </i>
+         Oficina
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_bdcYJZJWgqXLyu1?Q_DL=6h6nYZh1NmOKinX_bdcYJZJWgqXLyu1_MLRP_3WaC5KlX1h8QK2h&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLLOSRIOSOficina" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-suitcase m-r-10">
+         </i>
+         Mobiliario
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_3K66qmiWa5V4XLD?Q_DL=4JHyQzlmdYS5P01_3K66qmiWa5V4XLD_MLRP_6xGRgd8iZx7Ddhr&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLLOSRIOSMobiliario" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-usd m-r-10">
+         </i>
+         Gastos Básicos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_eXwRI7Hg5ajWwkd?Q_DL=8BpqnkZcimGlWcZ_eXwRI7Hg5ajWwkd_MLRP_a9GK7RioluqjNit&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLLOSRIOSGastosBásicos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-car m-r-10">
+         </i>
+         Otros Gastos
+         <a href="http://fenuchile.qualtrics.com/jfe/form/SV_8lfwt1KiGnBNhFH?Q_DL=d4DYaZ49K7NmYGF_8lfwt1KiGnBNhFH_MLRP_bwwiefk4GlLL19X&amp;Q_CHL=gl" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLLOSRIOSOtrosGastos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+        <label>
+         <i aria-hidden="true" class="fa fa-table m-r-10">
+         </i>
+         Costos Indirectos
+         <a href="https://docs.google.com/spreadsheets/d/1H0K_wasmPaZpKcHitytDkZukxDNP07AsMuMb69YDiHc//edit?rm=minimal#gid=0" target="_blank">
+          <i aria-hidden="true" class="fa fa-external-link m-l-10">
+          </i>
+         </a>
+        </label>
+       </div>
+       <div class="col-md-8">
+        <div class="progress">
+         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" id="OSLLOSRIOSCostosIndirectos" role="progressbar" style="width: 0%;">
+          <span style="color:#eceeef;">
+           0%
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+</html>
