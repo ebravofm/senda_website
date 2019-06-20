@@ -1,20 +1,23 @@
 import pandas as pd
+import gpandas as gpd
 import os
 from gspread_pandas import Spread, Client
 
-def generate_gspread(template_id = '11MxWyub_4sxpAKmDceuN1WNgInku_T1Su4_duJ8mACo'):
+
+def generate_gspread():
     template_vais = '1jsPk9CDfY4Gf4Sroh4hrpLwf4MnmMyvVgVS0s7Ltqrc'
     template_osl = '11MxWyub_4sxpAKmDceuN1WNgInku_T1Su4_duJ8mACo'
     
     centros = ['CHIGUAYANTE', 'ESPERANZA', 'MELIPILLA', 'OBRERO', 'OSL', 'OSLBIOBIO', 'OSLLOSRIOS', 'OSLTARAPACA', 'OSLTEST', 'OSLVALPO', 'SEMILLAS', 'SIMBIOSIS', 'TEST']
     
-    centros = [x for x in centros if 'OSL' in x]
-
     C = Client('ebravofm')
 
     d = {}
     for c in centros:
-        S = C.copy(template_id, c, True)
+        if 'OSL' in c:
+            S = C.copy(template_osl, c, True)
+        else:
+            S = C.copy(template_vais, c, True)
         d[c] = S.id
         S.worksheets()[0].update_acell('B2', c)
         
@@ -22,19 +25,8 @@ def generate_gspread(template_id = '11MxWyub_4sxpAKmDceuN1WNgInku_T1Su4_duJ8mACo
 
     
 def pop_X_gspread():
-    ids = {'CHIGUAYANTE': '1pn5X8TChQV1qXsPGX7VitlU63BBFUxbczGGkylmpwhw',
-           'ESPERANZA': '1eC8n4MxN_kwy-ayTHrjFod_2yJ-31g4zcqzUYJ_vpuE',
-           'MELIPILLA': '1Ita_p7BmqwwlrJJPhhjojLaZ9o4QFIc4s6z4626Irwc',
-           'OBRERO': '1UCDGGGI7LOQqOD9E_M1ogFhVBRYzOms0qHFH9h2ujzk',
-           'SEMILLAS': '15wWleuEs6E-VUGijWJtFHvQFcxbFVci_qt6SaPZ2E8c',
-           'SIMBIOSIS': '1WG0WCobFB437yfZgCu1VzpCKH7vYSM4Kow_OFSRtm7U',
-           'TEST': '1xwhFHBuQNFM0SLssEcMSuSuYfYJ-xzbX6ssrPWSBUZs',
-           'OSLVALPO': '16erIoN3cxIot2tdnc72rQoq3kqfKwUNK97PFnRyRfOI',
-           'OSLTEST': '1RA1eXMeVgUAB1VJkF5GGChHC0-_JRXOAOkOSWqAfww8',
-           'OSLTARAPACA': '1mAGMSc2gol91qy2vgs2Xb0bs0rmMdkTTkhhVuAQFgmA',
-           'OSLLOSRIOS': '1XTEsWupKGMd-nOcvgIPwA4xU5rf5BUgm1qWZ6h6XjUQ',
-           'OSLBIOBIO': '1_RTp2FiuF9RDi7krpATiHuQSp9CFwz2p9P7zdOehKlU',
-           'OSL': '14n9vCuAGW-_WOUAjWV9fHfdua8Ze9r5Av30veAdDDaM'}
+
+    ids = gpd.read_gexcel('1b6KX9vshrT-2UiDHafNp1Hug2OFSSl1y_TCXg_xLZBw').set_index('COD')['ID']
 
     d = load_results_folder()
 

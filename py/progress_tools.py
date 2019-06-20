@@ -24,19 +24,7 @@ def update_qualtrics_progress(json_path='../static/data/progress.json'):
     
 
 def update_gspread_progress(progress_df):
-    ids = {'CHIGUAYANTE': '1pn5X8TChQV1qXsPGX7VitlU63BBFUxbczGGkylmpwhw',
-           'ESPERANZA': '1eC8n4MxN_kwy-ayTHrjFod_2yJ-31g4zcqzUYJ_vpuE',
-           'MELIPILLA': '1Ita_p7BmqwwlrJJPhhjojLaZ9o4QFIc4s6z4626Irwc',
-           'OBRERO': '1UCDGGGI7LOQqOD9E_M1ogFhVBRYzOms0qHFH9h2ujzk',
-           'SEMILLAS': '15wWleuEs6E-VUGijWJtFHvQFcxbFVci_qt6SaPZ2E8c',
-           'SIMBIOSIS': '1WG0WCobFB437yfZgCu1VzpCKH7vYSM4Kow_OFSRtm7U',
-           'TEST': '1xwhFHBuQNFM0SLssEcMSuSuYfYJ-xzbX6ssrPWSBUZs',
-           'OSLVALPO': '16erIoN3cxIot2tdnc72rQoq3kqfKwUNK97PFnRyRfOI',
-           'OSLTEST': '1RA1eXMeVgUAB1VJkF5GGChHC0-_JRXOAOkOSWqAfww8',
-           'OSLTARAPACA': '1mAGMSc2gol91qy2vgs2Xb0bs0rmMdkTTkhhVuAQFgmA',
-           'OSLLOSRIOS': '1XTEsWupKGMd-nOcvgIPwA4xU5rf5BUgm1qWZ6h6XjUQ',
-           'OSLBIOBIO': '1_RTp2FiuF9RDi7krpATiHuQSp9CFwz2p9P7zdOehKlU',
-           'OSL': '14n9vCuAGW-_WOUAjWV9fHfdua8Ze9r5Av30veAdDDaM'}
+    ids = gpd.read_gexcel('1b6KX9vshrT-2UiDHafNp1Hug2OFSSl1y_TCXg_xLZBw').set_index('COD')['ID']
 
     coords = {'RRHH': 'C8',
                   'USUARIOS-VAIS': 'C9',
