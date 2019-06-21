@@ -23,7 +23,7 @@
                             <tr>
                                 <td style="width:50px;"><span class="round {{ color[n] }}">{{ centro['Letra'] }}</span></td>
                                 <td>
-                                    <h6>{{ centro['Nombre'] }}</h6><small class="text-muted">{{ centro['Tipo'] }}</small>
+                                    <h6><a href="{{url_for('input', cod=centro['Cod'])}}" style="color: #2c2b2e">{{ centro['Nombre'] }}</a></h6><small class="text-muted">{{ centro['Tipo'] }}</small>
                                 </td>
                                 <td style="text-align: center;">
                                     {% for n, form in progress.loc[centro['Cod']].iterrows() %}

@@ -77,6 +77,7 @@ def mapa():
 @app.route('/ias-uchile/results')
 def results():
     info = gpd.read_gexcel(G['info'])
+    info['Tipo'] = info['Tipo'] + ' ' + info['Población']
     info = info[['Cod', 'Nombre', 'Tipo', 'Letra']]
 
     progress = gpd.read_gexcel(G['progress'])
