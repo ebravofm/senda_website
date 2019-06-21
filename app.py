@@ -77,6 +77,24 @@ def mapa():
 @app.route('/ias-uchile/results')
 def results():
     info = gpd.read_gexcel(G['info'])
+    info = info[~info.Cod.str.contains('TEST')]
+
+    info['Tipo'] = info['Tipo'] + ' ' + info['Población']
+    info = info[['Cod', 'Nombre', 'Tipo', 'Letra']]
+
+    progress = gpd.read_gexcel(G['progress'])
+    progress['Color'] = np.where(progress['Progress']==100, '#009efb', '#a6b7bf')
+    progress['Title'] = np.where(progress['Progress']==100, 'Completo', 'Incompleto')
+    progress = progress[['Centro', 'Icon', 'Progress', 'Color', 'Title']].set_index('Centro')
+    color = pd.Series(['', 'round-success', 'round-primary', 'round-warning', 'round-danger']*5)
+    
+    gsheets = gpd.read_gexcel(G['gsheets']).set_index('COD')['ID']
+    
+    return render_template('results.html', info=info, progress=progress, color=color, gsheets=gsheets)
+
+@app.route('/ias-uchile/results/test')
+def results_test():
+    info = gpd.read_gexcel(G['info'])
     info['Tipo'] = info['Tipo'] + ' ' + info['Población']
     info = info[['Cod', 'Nombre', 'Tipo', 'Letra']]
 
