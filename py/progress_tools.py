@@ -13,7 +13,6 @@ except:
     from basic_tools import get_survey_df
 
     
-    
 def update_qualtrics_progress(json_path='../static/data/progress.json'):
     
     progress_df = check_progress()
@@ -61,7 +60,10 @@ def google_progress(google):
         indirectos = gpd.read_gexcel(link).iloc[:,-1].fillna('')
         i = indirectos[indirectos == 'MONTO TOTAL ANUAL'].index[0]
         values = indirectos[i+1:]
-        empty_count = values.value_counts()['']
+        try:
+            empty_count = values.value_counts()['']
+        except KeyError:
+            empty_count = 0
         percent = round(((len(values)-empty_count)/len(values))*100)
         #print(percent)
         
@@ -70,6 +72,7 @@ def google_progress(google):
     google = google[['COD', 'Centro', 'Progress']]
         
     return google
+
 
 def qualtrics_progress(qualtrics):
     survey_links = qualtrics[['COD', 'Link']]
@@ -96,7 +99,8 @@ def qualtrics_progress(qualtrics):
     progress_qualtrics_df['Progress'] = progress_qualtrics_df['Progress'].apply(lambda x: int(str(x).replace('%', '')))
     
     return progress_qualtrics_df
-    
+
+
 def check_progress():
     
     survey_df = get_survey_df()
