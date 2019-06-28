@@ -1,0 +1,266 @@
+From: Servidor SENDA <quimera.server@gmail.com>
+To: Emilio Bravo Maturana <ebravo@fen.uchile.cl>
+Subject: Progreso al 24/06 (aviso automatizado) test3
+Content-Type: text/html
+<html>
+    
+<html>
+   <div style="font-family: 'Rubik', Verdana, sans-serif; position: relative; margin-left: auto; margin-right: auto; padding-right: 15px; padding-left: 15px; padding: 15px 30px; width: 30rem; border: 1px solid rgba(0, 0, 0, 0.37); border-radius: 0.25rem;">
+      <div style="display: flex; margin-right: -15px; margin-left: -15px; padding-bottom: 10px">
+         <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px">
+            <h3 style='font-weight: 400; font-size: 1rem; color: #f62d51; text-align:center; padding-bottom: 10px'>
+               Avance al 24/06
+            </h3>
+            <p style="font-size: 0.825rem">
+            	Avance del llenado de los formularios por parte de las instituciones. Para ver detalles y mas haga click <a href="http://159.89.134.14/ias-uchile/avance" style="background-color: transparent; color: #f62d51">aquí</a>.
+            </p>
+         </div>
+      </div>
+      <div style="display: flex; margin-right: 15px; margin-left: -15px">
+         <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%">
+            <div style="background-color: #fff; border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.25rem; margin-bottom: 0.35rem;">
+               <div style="flex: 1 1 auto; padding-bottom: 0.75rem; padding-right: 0.75rem; padding-left: 0.75rem; padding-top: 0.25rem">
+                  <h4 style='margin-top: 0; margin-bottom: 0.5rem; color: #2c2b2e; font-weight: 400; line-height: 22px; font-size: 0.75rem'>
+                     Municipalidad de Melipilla
+                  </h4>
+                  <div style="display: flex; margin-right: -15px; margin-left: -15px">
+                     <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; max-width: 100%">
+                        <div style="display: flex; overflow: hidden; font-size: 0.5rem; line-height: 0.75rem; text-align: center; background-color: #eceeef; border-radius: 0.25rem">
+                           <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="86" id="MELIPILLA" role="progressbar" style="height: 0.75rem; color: #fff; background-color: #f62d51; width: 86%;">
+                              <span style="color:#fff;">
+                              86%
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div style="display: flex; margin-right: 15px; margin-left: -15px">
+         <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%">
+            <div style="background-color: #fff; border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.25rem; margin-bottom: 0.35rem;">
+               <div style="flex: 1 1 auto; padding-bottom: 0.75rem; padding-right: 0.75rem; padding-left: 0.75rem; padding-top: 0.25rem">
+                  <h4 style='margin-top: 0; margin-bottom: 0.5rem; color: #2c2b2e; font-weight: 400; line-height: 22px; font-size: 0.75rem'>
+                     Semillas de Cambio
+                  </h4>
+                  <div style="display: flex; margin-right: -15px; margin-left: -15px">
+                     <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; max-width: 100%">
+                        <div style="display: flex; overflow: hidden; font-size: 0.5rem; line-height: 0.75rem; text-align: center; background-color: #eceeef; border-radius: 0.25rem">
+                           <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="37" id="SEMILLAS" role="progressbar" style="height: 0.75rem; color: #fff; background-color: #f62d51; width: 37%;">
+                              <span style="color:#fff;">
+                              37%
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div style="display: flex; margin-right: 15px; margin-left: -15px">
+         <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%">
+            <div style="background-color: #fff; border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.25rem; margin-bottom: 0.35rem;">
+               <div style="flex: 1 1 auto; padding-bottom: 0.75rem; padding-right: 0.75rem; padding-left: 0.75rem; padding-top: 0.25rem">
+                  <h4 style='margin-top: 0; margin-bottom: 0.5rem; color: #2c2b2e; font-weight: 400; line-height: 22px; font-size: 0.75rem'>
+                     Coporación Tiempo de Esperanza
+                  </h4>
+                  <div style="display: flex; margin-right: -15px; margin-left: -15px">
+                     <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; max-width: 100%">
+                        <div style="display: flex; overflow: hidden; font-size: 0.5rem; line-height: 0.75rem; text-align: center; background-color: #eceeef; border-radius: 0.25rem">
+                           <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="" id="ESPERANZA" role="progressbar" style="height: 0.75rem; color: #fff; background-color: #f62d51; width: %;">
+                              <span style="color:#fff;">
+                              %
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div style="display: flex; margin-right: 15px; margin-left: -15px">
+         <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%">
+            <div style="background-color: #fff; border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.25rem; margin-bottom: 0.35rem;">
+               <div style="flex: 1 1 auto; padding-bottom: 0.75rem; padding-right: 0.75rem; padding-left: 0.75rem; padding-top: 0.25rem">
+                  <h4 style='margin-top: 0; margin-bottom: 0.5rem; color: #2c2b2e; font-weight: 400; line-height: 22px; font-size: 0.75rem'>
+                     Cristo Obrero
+                  </h4>
+                  <div style="display: flex; margin-right: -15px; margin-left: -15px">
+                     <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; max-width: 100%">
+                        <div style="display: flex; overflow: hidden; font-size: 0.5rem; line-height: 0.75rem; text-align: center; background-color: #eceeef; border-radius: 0.25rem">
+                           <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="" id="OBRERO" role="progressbar" style="height: 0.75rem; color: #fff; background-color: #f62d51; width: %;">
+                              <span style="color:#fff;">
+                              %
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div style="display: flex; margin-right: 15px; margin-left: -15px">
+         <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%">
+            <div style="background-color: #fff; border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.25rem; margin-bottom: 0.35rem;">
+               <div style="flex: 1 1 auto; padding-bottom: 0.75rem; padding-right: 0.75rem; padding-left: 0.75rem; padding-top: 0.25rem">
+                  <h4 style='margin-top: 0; margin-bottom: 0.5rem; color: #2c2b2e; font-weight: 400; line-height: 22px; font-size: 0.75rem'>
+                     Municipalidad de Chiguayante
+                  </h4>
+                  <div style="display: flex; margin-right: -15px; margin-left: -15px">
+                     <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; max-width: 100%">
+                        <div style="display: flex; overflow: hidden; font-size: 0.5rem; line-height: 0.75rem; text-align: center; background-color: #eceeef; border-radius: 0.25rem">
+                           <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="" id="CHIGUAYANTE" role="progressbar" style="height: 0.75rem; color: #fff; background-color: #f62d51; width: %;">
+                              <span style="color:#fff;">
+                              %
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div style="display: flex; margin-right: 15px; margin-left: -15px">
+         <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%">
+            <div style="background-color: #fff; border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.25rem; margin-bottom: 0.35rem;">
+               <div style="flex: 1 1 auto; padding-bottom: 0.75rem; padding-right: 0.75rem; padding-left: 0.75rem; padding-top: 0.25rem">
+                  <h4 style='margin-top: 0; margin-bottom: 0.5rem; color: #2c2b2e; font-weight: 400; line-height: 22px; font-size: 0.75rem'>
+                     ONG Simbiosis
+                  </h4>
+                  <div style="display: flex; margin-right: -15px; margin-left: -15px">
+                     <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; max-width: 100%">
+                        <div style="display: flex; overflow: hidden; font-size: 0.5rem; line-height: 0.75rem; text-align: center; background-color: #eceeef; border-radius: 0.25rem">
+                           <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="" id="SIMBIOSIS" role="progressbar" style="height: 0.75rem; color: #fff; background-color: #f62d51; width: %;">
+                              <span style="color:#fff;">
+                              %
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div style="display: flex; margin-right: 15px; margin-left: -15px">
+         <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%">
+            <div style="background-color: #fff; border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.25rem; margin-bottom: 0.35rem;">
+               <div style="flex: 1 1 auto; padding-bottom: 0.75rem; padding-right: 0.75rem; padding-left: 0.75rem; padding-top: 0.25rem">
+                  <h4 style='margin-top: 0; margin-bottom: 0.5rem; color: #2c2b2e; font-weight: 400; line-height: 22px; font-size: 0.75rem'>
+                     OSL Tarapacá
+                  </h4>
+                  <div style="display: flex; margin-right: -15px; margin-left: -15px">
+                     <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; max-width: 100%">
+                        <div style="display: flex; overflow: hidden; font-size: 0.5rem; line-height: 0.75rem; text-align: center; background-color: #eceeef; border-radius: 0.25rem">
+                           <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="" id="OSLTARAPACA" role="progressbar" style="height: 0.75rem; color: #fff; background-color: #f62d51; width: %;">
+                              <span style="color:#fff;">
+                              %
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div style="display: flex; margin-right: 15px; margin-left: -15px">
+         <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%">
+            <div style="background-color: #fff; border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.25rem; margin-bottom: 0.35rem;">
+               <div style="flex: 1 1 auto; padding-bottom: 0.75rem; padding-right: 0.75rem; padding-left: 0.75rem; padding-top: 0.25rem">
+                  <h4 style='margin-top: 0; margin-bottom: 0.5rem; color: #2c2b2e; font-weight: 400; line-height: 22px; font-size: 0.75rem'>
+                     OSL Valparaíso
+                  </h4>
+                  <div style="display: flex; margin-right: -15px; margin-left: -15px">
+                     <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; max-width: 100%">
+                        <div style="display: flex; overflow: hidden; font-size: 0.5rem; line-height: 0.75rem; text-align: center; background-color: #eceeef; border-radius: 0.25rem">
+                           <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="" id="OSLVALPO" role="progressbar" style="height: 0.75rem; color: #fff; background-color: #f62d51; width: %;">
+                              <span style="color:#fff;">
+                              %
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div style="display: flex; margin-right: 15px; margin-left: -15px">
+         <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%">
+            <div style="background-color: #fff; border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.25rem; margin-bottom: 0.35rem;">
+               <div style="flex: 1 1 auto; padding-bottom: 0.75rem; padding-right: 0.75rem; padding-left: 0.75rem; padding-top: 0.25rem">
+                  <h4 style='margin-top: 0; margin-bottom: 0.5rem; color: #2c2b2e; font-weight: 400; line-height: 22px; font-size: 0.75rem'>
+                     OSL Metropolitana
+                  </h4>
+                  <div style="display: flex; margin-right: -15px; margin-left: -15px">
+                     <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; max-width: 100%">
+                        <div style="display: flex; overflow: hidden; font-size: 0.5rem; line-height: 0.75rem; text-align: center; background-color: #eceeef; border-radius: 0.25rem">
+                           <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="6" id="OSL" role="progressbar" style="height: 0.75rem; color: #fff; background-color: #f62d51; width: 6%;">
+                              <span style="color:#fff;">
+                              6%
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div style="display: flex; margin-right: 15px; margin-left: -15px">
+         <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%">
+            <div style="background-color: #fff; border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.25rem; margin-bottom: 0.35rem;">
+               <div style="flex: 1 1 auto; padding-bottom: 0.75rem; padding-right: 0.75rem; padding-left: 0.75rem; padding-top: 0.25rem">
+                  <h4 style='margin-top: 0; margin-bottom: 0.5rem; color: #2c2b2e; font-weight: 400; line-height: 22px; font-size: 0.75rem'>
+                     OSL Bio Bio
+                  </h4>
+                  <div style="display: flex; margin-right: -15px; margin-left: -15px">
+                     <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; max-width: 100%">
+                        <div style="display: flex; overflow: hidden; font-size: 0.5rem; line-height: 0.75rem; text-align: center; background-color: #eceeef; border-radius: 0.25rem">
+                           <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="" id="OSLBIOBIO" role="progressbar" style="height: 0.75rem; color: #fff; background-color: #f62d51; width: %;">
+                              <span style="color:#fff;">
+                              %
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div style="display: flex; margin-right: 15px; margin-left: -15px">
+         <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%">
+            <div style="background-color: #fff; border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.25rem; margin-bottom: 0.35rem;">
+               <div style="flex: 1 1 auto; padding-bottom: 0.75rem; padding-right: 0.75rem; padding-left: 0.75rem; padding-top: 0.25rem">
+                  <h4 style='margin-top: 0; margin-bottom: 0.5rem; color: #2c2b2e; font-weight: 400; line-height: 22px; font-size: 0.75rem'>
+                     OSL Los Ríos
+                  </h4>
+                  <div style="display: flex; margin-right: -15px; margin-left: -15px">
+                     <div style="position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; max-width: 100%">
+                        <div style="display: flex; overflow: hidden; font-size: 0.5rem; line-height: 0.75rem; text-align: center; background-color: #eceeef; border-radius: 0.25rem">
+                           <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="" id="OSLLOSRIOS" role="progressbar" style="height: 0.75rem; color: #fff; background-color: #f62d51; width: %;">
+                              <span style="color:#fff;">
+                              %
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</html>
+</html>
+
+
+</html>
