@@ -4,9 +4,11 @@ import pandas as pd
 import gpandas as gpd
 import datetime
 import numpy as np
-
+from sms import sms_page
 
 app = Flask(__name__)
+
+app.register_blueprint(sms_page)
 
 G = {'info': '1JV6tOulapdvDkT9RIEsf-rwUUefg9xHGYMuW4nFI_vM',
      'formularios': '1svbIKSKB5v0LjKUgEt0_cqQRU83d_7fzRyoywMKKAHI',
