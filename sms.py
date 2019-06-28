@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
 
 sms_page = Blueprint('sms_page', __name__, template_folder='templates')
