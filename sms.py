@@ -12,4 +12,4 @@ def sms_reply():
     resp = MessagingResponse()
     resp.message("You said: {}".format(msg))
 
-	return str(resp)
+    return str(resp)
