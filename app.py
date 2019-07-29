@@ -13,7 +13,8 @@ app.register_blueprint(sms_page)
 G = {'info': '1JV6tOulapdvDkT9RIEsf-rwUUefg9xHGYMuW4nFI_vM',
      'formularios': '1svbIKSKB5v0LjKUgEt0_cqQRU83d_7fzRyoywMKKAHI',
      'progress': '1My0exuCahxoaY78Aybw1NQQgA9C4DWFtEt34eQzVO5Q',
-     'gsheets': '1b6KX9vshrT-2UiDHafNp1Hug2OFSSl1y_TCXg_xLZBw'}
+     'gsheets': '1b6KX9vshrT-2UiDHafNp1Hug2OFSSl1y_TCXg_xLZBw',
+     'indirectos': '1w-YUnFu6F1dF6CZ2bfaahWJODlpDLKiiTDZdCy6o_iM'}
 
 @app.route('/ias-uchile')
 def index():
@@ -91,8 +92,10 @@ def results():
     color = pd.Series(['', 'round-success', 'round-primary', 'round-warning', 'round-danger']*5)
     
     gsheets = gpd.read_gexcel(G['gsheets']).set_index('COD')['ID']
+    indirectos = gpd.read_gexcel(G['indirectos']).set_index('COD')['ID']
     
-    return render_template('results.html', info=info, progress=progress, color=color, gsheets=gsheets)
+    return render_template('results.html', info=info, progress=progress, color=color, gsheets=gsheets, indirectos=indirectos)
+
 
 @app.route('/ias-uchile/results/test')
 def results_test():
@@ -107,8 +110,9 @@ def results_test():
     color = pd.Series(['', 'round-success', 'round-primary', 'round-warning', 'round-danger']*5)
     
     gsheets = gpd.read_gexcel(G['gsheets']).set_index('COD')['ID']
+    indirectos = gpd.read_gexcel(G['indirectos']).set_index('COD')['ID']
     
-    return render_template('results.html', info=info, progress=progress, color=color, gsheets=gsheets)
+    return render_template('results.html', info=info, progress=progress, color=color, gsheets=gsheets, indirectos=indirectos)
 
 
 if __name__ == '__main__':

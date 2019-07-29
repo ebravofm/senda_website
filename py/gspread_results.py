@@ -24,6 +24,22 @@ def generate_gspread():
     return d
 
     
+def generate_gspread_indirectos():
+    indirectos = '1gn6V_fpN08ErtFnVHhNeAnNGhho8TKvfUUjoTu0eTes'
+    
+    centros = ['CHIGUAYANTE', 'ESPERANZA', 'MELIPILLA', 'OBRERO', 'OSL', 'OSLBIOBIO', 'OSLLOSRIOS', 'OSLTARAPACA', 'OSLTEST', 'OSLVALPO', 'SEMILLAS', 'SIMBIOSIS', 'TEST']
+        
+    C = Client('ebravofm')
+
+    d = {}
+    for c in centros:
+        S = C.copy(indirectos, c, True)
+        d[c] = S.id
+        
+    return d
+
+
+
 def pop_X_gspread():
 
     ids = gpd.read_gexcel('1b6KX9vshrT-2UiDHafNp1Hug2OFSSl1y_TCXg_xLZBw').set_index('COD')['ID']
